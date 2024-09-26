@@ -1,0 +1,673 @@
+/* 4 - TEXT FORMATTING */
+
+/* Formatting Any Word */
+p, h1, h2, h3, h4 { 
+  -webkit-hyphens: none !important; 
+  -moz-hyphens: none !important; 
+  -ms-hyphens: none !important; 
+  hyphens: none !important; 
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+}
+
+/* Heading 4, Auto Layout Title & Description when Underlined */
+h4:not(.lesson-title), 
+.list-section-title u,  
+.list-section-title [style*="underline"],
+.list-item-content__description [style*="underline"] 
+ {
+font-family: var(--header-4-font) !important;
+font-weight: var(--semi-bold) !important;
+color: var(--bright) !important;
+text-transform: uppercase !important;
+letter-spacing: var(--spacing) !important;
+vertical-align: middle;
+text-decoration: none !important;
+}
+
+/* Paragraph 1 */
+.sqsrte-large {
+ font-weight: var(--medium) !important; 
+}
+
+/* 5 - BUTTONS & LINKS */
+
+/* No Underline on Any Links */
+.sqs-block-html a  {
+ text-decoration: none; 
+ background-image: none;
+}
+
+/* Smooth Scroll when User Clicks on Anchor Links */
+html { 
+ scroll-behavior: smooth;
+}
+
+/* Tertiary Button, on Hover */
+.sqs-button-element--tertiary:hover {
+ background: transparent !important;
+ opacity: var(--opacity) !important;
+ text-decoration: underline;
+ text-decoration-thickness: 2px;
+ text-underline-offset: 7px;
+ display: inline-block;
+}
+
+/* Tertiary Button, Underline Position */
+.sqs-button-element--tertiary::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 100%;
+  height: 2px;
+}
+  
+/* All Links on Hover Become Less Opaque */
+.sqs-block-html a:hover,
+ footer .sqs-block-html a:hover,
+.header-nav-folder-item a:hover,
+.summary-read-more-link:hover,
+.list-item-content__button:hover, 
+.sqs-block-summary-v2 .summary-read-more-link:hover,
+.blog-more-link:hover,
+.sqs-block-accordion .accordion-item__description a:hover,
+.original-price, 
+.products.collection-content-wrapper .nested-category-breadcrumb-link:hover
+.category-link:hover, 
+.nested-category-breadcrumb-link:hover, 
+.products.collection-content-wrapper .nested-category-tree-wrapper .category-link:hover,
+.blog-more-link:hover, 
+.blog-side-by-side .blog-categories:hover,
+.blog-side-by-side .blog-author:hover,
+.blog-meta-item a:hover,
+.eventlist-column-thumbnail img:hover,
+.item-pagination-link .item-pagination-title:hover, 
+.lesson-item .lesson-item-pagination-title:hover,
+.gallery-section .gallery-caption p:hover,
+.list-item-content__description a:hover, 
+.list-item-content__description a:hover, 
+.image-slide-title:hover,
+.sqs-block-summary-v2 .summary-read-more-link:hover 
+.sqs-block-summary-v2 .summary-metadata-item:hover,
+.sqs-block-archive a:hover {
+ opacity: var(--opacity) !important;
+}
+
+
+/* 6 - NAVIGATION */
+
+/* Navigation Folder, Padding */
+.header-nav .header-nav-item--folder .header-nav-folder-content .header-nav-folder-item a {
+  display: flex;
+  padding: 0.25rem;
+}
+
+/* Navigation Folder Item, Font Weight */
+.header .header-nav .header-nav-item--folder .header-nav-folder-content {
+ font-weight: var(--medium) !important;
+ background-color: var(--lightest) !important;   
+ margin-left: 0.3rem; 
+ padding: 1.1rem;
+ min-width: 5rem;
+ box-shadow: var(--shadow);
+}
+
+/* Navigation Folder Item, Font when Active */
+body:not(.header--menu-open) .header-nav-folder-item--active .header-nav-folder-item-content {
+background-image: none;
+font-weight: var(--semi-bold) !important;
+}
+
+/* Active Navigation Item, Underline on Hover */
+body:not(.header--menu-open) .header-nav-item--active>a, 
+body:not(.header--menu-open) .header-nav-item > a:hover {
+ border-bottom: 2px solid var(--bright); 
+ background: none;
+ background-image: none;
+ padding-bottom: 0rem;
+}
+
+/* Hide Social Icons on Desktop View */
+@media(min-width: 767px) {
+.header-actions-action--social {
+ display: none !important;
+  }
+}
+
+/* View Social Icons on Mobile Menu */
+.header-menu-actions { 
+  z-index: 9;
+  margin: 0px;
+  bottom: 0.625rem; 
+  width: 100%!important; 
+  position: fixed;
+  padding: 0.5rem 0;
+  background: transparent;
+}
+
+/* Mobile Menu, Header Button, Spacing */
+.header-menu-cta a { 
+ margin-bottom: 6.25rem;
+}
+
+/* Mobile Menu, Item Font Size */
+.header-menu-nav-item a,
+.header--menu-open .header .user-accounts-text-link {
+ font-size: var(--heading-3);
+ font-weight: var(--medium) !important; 
+}
+
+/* Mobile Menu, Hide Item Underline */
+:is([aria-current="page"], [aria-current="true"]) .header-menu-nav-item-content {
+ background: none !important;
+}
+
+/* Mobile Menu, Hide Arrow after Item */
+.header-menu-nav-item-content .chevron {
+display: none;
+}
+
+/* Mobile Menu, Login */
+.user-accounts-link.loaded .user-accounts-text-link{
+  margin-top: 0 !important;
+}
+
+/* 7 - COLLECTION PAGES */
+
+/* Portfolio Page, Blog Page, and Gallery Reel Page Width on Inset */
+@media(min-width: 767px) { 
+.tweak-products-width-inset .products.collection-content-wrapper,
+.tweak-events-stacked-width-inset .events, 
+.tweak-portfolio-grid-basic-width-inset .portfolio-grid-basic,
+.tweak-portfolio-grid-overlay-width-inset .portfolio-grid-overlay,
+.tweak-blog-side-by-side-width-inset .blog-side-by-side, 
+.tweak-blog-basic-grid-width-inset .blog-basic-grid,
+.gallery-reel[data-width="inset"]  {
+    max-width: 1200px !important;
+    padding-left: 0vw;
+    padding-right: 0vw;
+    margin: 0 auto;
+  }
+}
+
+/* Store Page, When Product is on Sale, Original Price is Grey */
+.original-price {
+  color: var(--grey);
+}
+
+/* Store Page, Hide Horizontal Line when Categories are at Top  */
+.products.collection-content-wrapper .nested-category-children::after {
+display: none;
+}
+
+/* Store Page, Full Layout, Image Spacing */
+.pdp-layout-full-width-carousel .pdp-gallery-slides {
+  padding-right: 1.875rem;
+}
+
+/* Store Page, Wrap & Half Layout, Content Spacing */
+.pdp-layout-full-bleed .pdp-form-wrapper, 
+.pdp-layout-wrap-around .pdp-form-wrapper {
+ width: 45%;
+ padding: 8rem 8rem;
+}
+
+/* Store Page, Quickview Button */
+.sqs-product-quick-view-button-wrapper .sqs-product-quick-view-button {
+ color: var(--bright) !important;
+ background-color: var(--lightest) !important; 
+}
+
+/* Store Page, Related Item */
+.ProductItem .ProductItem-related-label {
+  font-size: var(--heading-3);
+}
+
+/* Event Page, Meta Color */
+.eventlist-meta,
+.eventitem-meta {
+  color: var(--bright);
+}
+
+/* Blog Page, Read More Link Underline Position */
+.blog-more-link {
+  position: relative;
+  display: inline-block;
+}
+
+/* Blog Page, Read More Link, Underline Width & Height */
+.blog-more-link:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: -5px !important;
+  height: 2px;
+}
+
+/* Blog Page, Read More Link Size */
+.blog-basic-grid .blog-more-link, 	
+.blog-masonry .blog-more-link, 
+.blog-side-by-side .blog-more-link, 
+.blog-single-column .blog-more-link { 
+ text-transform: uppercase; 
+ letter-spacing: var(--spacing);
+ font-size: var(--paragraph-3);
+ font-weight: var(--semi-bold) !important;
+}
+
+/* 8 - SALE & SOLD OUT */
+
+/* Store Page & Summary Block, Sale & Sold Out */
+.product-mark.sale, 
+.product-mark.sold-out, 
+.sqs-block-summary-v2 .product-mark.sale, 
+.sqs-block-summary-v2 .product-mark.sold-out,
+.sold-out .product-details .product-mark.sold-out {
+ letter-spacing: var(--spacing);
+ line-height: .9rem !important;
+ position: absolute !important;
+ text-transform: uppercase;
+ top: 0.9rem;
+ right: 0.9rem;
+ padding: 0.6rem !important; 
+ width: 2.2rem; 
+ border-radius: 50% !important; 
+ height: 2.2rem; 
+ justify-content: center; 
+ align-items: center !important;  
+ text-align: center; 
+ display: flex;
+}
+
+/* Sale & Sold Out */
+.product-mark.sale, 
+.product-mark.sold-out { 
+ font-size: var(--paragraph-3) !important;
+ font-weight: var(--medium) !important; 
+}
+
+/* Summary Block List, Sale & Sold Out */
+.sqs-block-summary-v2 .summary-block-setting-design-list {
+.product-mark.sale, 
+.product-mark.sold-out {
+ top: 0.9rem !important;
+ left: 0.9rem !important;
+ padding: 0.6rem !important; 
+ }
+}
+
+/* Sale Color */
+.product-mark.sale {
+  color: var(--lightest) !important; 
+  background-color: var(--bright) !important;
+}
+
+/* Sold Out Color */
+.product-mark.sold-out {
+  color: var(--lightest) !important; 
+  background-color: var(--dark) !important;
+}
+
+/* 9 - GALLERY SECTION */
+
+/* Gallery Section, Caption Alignment */
+.gallery-caption-grid-simple, 
+.gallery-caption-grid-strips, 
+.gallery-caption-grid-masonry {
+  text-align: center;
+}
+
+/* Gallery Section, Slideshow Reel, Space In Between Images */
+.gallery-reel-item img {
+ transform: scale(.93);
+}
+
+/* 10 - AUTO LAYOUT SECTION */
+
+/* Auto Layout, Section & Item Title Weight  */
+.list-section-title,
+.list-section-title p,
+.list-item-content__title { 
+ font-weight: var(--medium) !important; 
+} 
+
+/* Auto Layout, Section Title When Underlined */
+.list-section-title u,  
+.list-section-title [style*="underline"],
+.list-item-content__description [style*="underline"] 
+ {
+ font-size: var(--heading-4);
+ font-weight: var(--semi-bold) !important;
+ color: var(--bright) !important;
+ text-transform: uppercase !important;
+ letter-spacing: var(--spacing) !important;
+ vertical-align: middle;
+ text-decoration: none !important;
+}
+
+/* Auto Layout, Item Button */
+.list-item-content__button {
+  font-size: var(--paragraph-3) !important; 
+  position: relative;
+  background-color: transparent !important;
+  spacing:  var(--spacing) !important;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 7px;
+}
+
+/* Auto Layout, Item Description Links  */
+.list-item-content__description a, 
+.list-item-content__description u  {
+ color: var(--bright) !important;  
+ text-decoration: none; 
+ background-image: none;
+}
+
+/* Auto Layout, Banner Slideshow Button Padding */
+.user-items-list-item-container.user-items-list-banner-slideshow[data-button-font-unit="rem"] .list-item-content__button{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Auto Layout, Item Button when content is left or right aligned */
+.user-items-list-carousel[data-button-alignment="left"] .list-item-content__button,
+.user-items-list-carousel[data-button-alignment="right"] .list-item-content__button, 
+.user-items-list-item-container.user-items-list-simple[data-button-alignment="left"] .list-item-content__button, 
+.user-items-list-item-container.user-items-list-simple[data-button-alignment="right"] .list-item-content__button {
+  padding: 0.2rem !important;
+}
+
+/* 11 - SQUARESPACE BLOCKS */
+
+/* Horizontal Line Block */
+.sqs-block-horizontalrule hr {
+ height: 0.15rem; 
+ vertical-align: middle;
+ margin-right: 0.8rem;
+}
+
+/* Summary Block Title */
+.summary-title-link {
+ font-weight: var(--medium); 
+}
+
+/* Summary Block, Product Price */
+.sqs-block-summary-v2 .summary-price .product-price {
+ font-weight: var(--medium) !important; 
+color: var(--bright) !important;
+}
+
+/* Summary Block, Metadata */
+.sqs-block-summary-v2 .summary-metadata-item {
+  font-size: var(--paragraph-2) !important;
+  font-weight: var(--semi-bold); 
+}
+
+/* Summary Block, Excerpt */
+.sqs-block-summary-v2 .summary-excerpt p {
+ font-size:var(--paragraph-2) !important;
+ font-weight: var(--regular); 
+} 
+
+/* Summary Read More Link */
+.summary-read-more-link {
+  font-size: var(--paragraph-3) !important; 
+  font-weight: var(--semi-bold) !important; 
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+  position: relative;
+  background-color: transparent !important;
+  spacing:  var(--spacing) !important;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 7px;
+}
+
+/* Gallery Block, Caption Title */
+.image-slide-title {
+  font-weight: var(--regular);
+}
+
+/* Gallery Block, Stacked, Space Between Images */
+.sqs-gallery-block-stacked .image-wrapper img {
+  margin-bottom: 1.8rem !important;
+}
+
+/* Gallery Block, Carousel, Space Between Images */
+.sqs-gallery-design-strip-slide {
+  margin-right: 1.8rem !important;
+}
+
+/* Newsletter Block, Padding & Margin */
+.newsletter-block .newsletter-form-body {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Newsletter Block, Hide Title & Description */
+.newsletter-form-header-description p, .newsletter-form-body p {
+  display: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Newsletter Block, Disclaimer */
+.newsletter-form-footnote p { 
+  color: var(--grey);
+}
+
+/* Accordion Block, No Dividers */
+.sqs-block-accordion .accordion-divider {
+display: none !important;
+}
+
+/* Accordion Block, Title */
+.accordion-item__title  {
+ font-weight: var(--medium) !important; 
+} 
+
+/* Accordion Block, Title Background Shape */
+.sqs-block-accordion .accordion-item__click-target {
+  padding: 2rem !important;
+  margin-top: 1.2rem;
+}
+
+/* Accordion Block, Description */
+.accordion-item__description {
+  font-weight: var(--regular);
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  max-width: 100% !important;
+}
+
+/* Accordion Block, Background with Lightest Color */
+[data-section-theme="light"], 
+[data-section-theme="light-bold"], 
+[data-section-theme="bright"], 
+[data-section-theme="dark"], 
+[data-section-theme="dark-bold"], 
+[data-section-theme="black"], 
+[data-section-theme="black-bold"] {
+.sqs-block-accordion .accordion-item__click-target, .sqs-block-accordion .accordion-item__dropdown--open {
+ background-color: var(--lightest);
+ }
+}
+
+/* Accordion Block, Background with Light Color */
+[data-section-theme="white"],
+[data-section-theme="white-bold"],
+[data-section-theme="bright-inverse"] {
+  .sqs-block-accordion .accordion-item__click-target,
+  .sqs-block-accordion .accordion-item__dropdown--open {
+    background-color: var(--light) !important;
+  }
+}
+
+/* Digital Product Block, No Divider */
+.pricing-plan-benefits-divider {
+  display: none !important;
+}
+
+/* Digital Product Block, Padding before Benefits */
+.product-block .sqs-editable-button  {
+  margin-bottom: 1.875rem;
+}
+
+/* Archive Block, List Spacing */
+.archive-group-list:not(.sqs-block-archive .archive-block-setting-layout-dropdown .archive-group-list) {
+    columns: 8rem;
+    column-gap: 3rem;
+    line-height: 2em;
+}
+
+/* Archive Block, Justify & Center Items*/
+ul.archive-group-list:not(.sqs-block-archive .archive-block-setting-layout-dropdown .archive-group-list) {
+  font-weight: var(--medium); 
+ justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Menu Block, Active Menu Item */
+.menu-block .menu-selector label.menu-select-labels--active {
+ border: 2px solid var(--bright);  
+ text-decoration: none;
+ padding: 0.6rem;
+ line-height: .5rem;
+}
+
+/* Menu Block, Title Underlined */
+.menu-section-title {
+  border-bottom: 2px solid var(--bright);
+  padding-bottom: 0.625rem;
+  line-height: 1.25rem;
+  display: inline-block;
+}
+
+/* Open Table Button */
+.ot-dtp-picker.wide .ot-dtp-picker-form .ot-dtp-picker-button {
+  background-color: var(--bright);
+  text-transform: uppercase;
+}
+
+/* Open Table Title */
+div.sqs-block-opentable-v2 .squarespace-opentable-new-age-wrapper h1 {
+  font-size: var(--heading-3);
+}
+
+/* Donation Block Disclaimer */
+.form-wrapper .react-form-contents p {
+ color: var(--grey);
+ font-size: var(--paragraph-3) !important;
+ font-weight: var(--regular) !important;
+}
+
+/* 12 - ROUNDED CORNERS */
+
+/* Regular Size Corners */
+.page-section.background-width--inset .section-background, 
+.section-background, 
+.sqs-block-summary-v2 .img-wrapper,
+.portfolio-hover-backgrounds-wrapper, 
+.portfolio-grid-overlay .grid-item .portfolio-overlay,
+.portfolio-grid-basic .grid-item .grid-image,
+.sqs-gallery-block-slideshow, 
+.sqs-gallery-block-grid .slide img, 
+.sqs-block-gallery, 
+.sqs-gallery-design-strip-slide, 
+.sqs-block-map.vsize-12 .sqs-block-content, 
+.sqs-gallery-block-grid .slide .margin-wrapper a.image-slide-anchor, .sqs-video-wrapper .sqs-video-overlay, .sqs-gallery-design-stacked-slide img, .sqs-gallery-design-strip-slide img, .sqs-gallery-block-grid .slide img, 
+.sqs-gallery-block-stacked .image-wrapper img,
+.sqs-gallery-block-grid img, 
+.gallery-strips-item img, 
+.gallery-masonry-item img,
+.gallery-grid-item img,
+.gallery-fullscreen-slideshow-item img, 
+.gallery-slideshow-thumbnails img, 
+.gallery-reel-item img, 
+.sqs-gallery-design-carousel 
+.sqs-gallery-design-carousel-slide *, 
+.sqs-gallery-design-autocolumns-slide img,
+.sqs-block-quote, 
+.sqs-modal-lightbox-content .lightbox-inner .lightbox-content, 
+div.sqs-block-opentable-v2 .squarespace-opentable-new-age-wrapper,
+.product-block .image-container img, 
+.pdp-layout-full-width-carousel .pdp-gallery-wrapper img, 
+.ProductItem-gallery-slides-item, 
+.sqs-product-quick-view-lightbox .sqs-product-quick-view-content,
+.products.collection-content-wrapper .list-grid .grid-item .grid-image, 
+.pdp-layout .selected, 
+.pdp-gallery-slides-image,
+.blog-alternating-side-by-side .image-wrapper, 
+.blog-basic-grid .image-wrapper, 
+.blog-masonry .image-wrapper, 
+.blog-side-by-side .image-wrapper, 
+.blog-single-column .image-wrapper, 
+.related-item-link-thumbnail img,
+.eventlist-column-thumbnail img, 
+.eventlist-column-thumbnail,
+.user-items-list-banner-slideshow .slides img, 
+.user-items-list-banner-slideshow .list-item-card-background, 
+.list-image, .user-items-list-simple .list-item, 
+.user-items-list-simple [data-is-card-enabled="true"] .list-image, 
+.user-items-list-carousel .list-item [data-is-card-enabled="true"], 
+.user-items-list-carousel__slide img, .user-items-list-carousel .list-item[data-is-card-enabled="true"], 
+.user-items-list-carousel [data-is-card-enabled="true"] .user-items-list-carousel__media-inner img,
+.lesson-item .lesson-grid-meta-container,
+.lessons.collection-content-wrapper .grid-image-wrapper, 
+.lessons.collection-content-wrapper .list-grid .grid-item .grid-image,
+/* Lightbox Content */
+.sqs-modal-lightbox-content .lightbox-inner .lightbox-content {
+border-radius: var(--corners) !important;
+}
+
+/* Smaller Corners */
+.sqs-block-summary-v2 .summary-item-record-type-event .summary-thumbnail-event-date, 
+.sqs-product-quick-view-button-wrapper .sqs-product-quick-view-button, 
+.product-details .product-quantity-input input, 
+.ProductItem-gallery-thumbnails-item img, 
+.header .header-nav .header-nav-item--folder .header-nav-folder-content, 
+ .sqs-search-ui-button-wrapper .search-input,
+.menu-block .menu-selector label.menu-select-labels--active,
+ .sqs-block-archive .archive-block-setting-layout-dropdown.archive-block-wrapper, 
+ .sqs-widgets-audio-player, 
+ div.sqs-block-opentable-v2 .squarespace-opentable-button-wrapper .ot-dtp-picker-button { border-radius: var(--smallcorners) !important; 
+}
+
+/* Product Page, Full Bleed, Rounded Inside Corners */
+.pdp-layout-full-bleed .pdp-gallery-images {
+  border-bottom-right-radius: var(--corners); 
+  border-top-right-radius: var(--corners);
+}
+
+/* Auto Layout, List & Carousel Item, when Card Enabled, Bottom Corners Not Rounded */
+.user-items-list-simple [data-is-card-enabled="true"] .list-image,
+.user-items-list-carousel [data-is-card-enabled="true"] .user-items-list-carousel__media-inner img {
+ border-bottom-left-radius: 0 !important; 
+ border-bottom-right-radius: 0 !important;
+}
+
+/* Accordion Block, Title Section when Closed */
+.sqs-block-accordion .accordion-item__click-target {
+ border-bottom-left-radius: var(--smallcorners)!important;
+ border-bottom-right-radius: var(--smallcorners)!important;
+ border-top-left-radius: var(--smallcorners) !important;
+ border-top-right-radius: var(--smallcorners)!important;
+}
+
+/* Accordion Block, Title Section when Open */
+.accordion-item[data-is-open="true"] .accordion-item__click-target {
+ border-bottom-left-radius: 0 !important;
+ border-bottom-right-radius: 0 !important;
+}
+
+/* Accordion Block, Description when Open */
+.sqs-block-accordion .accordion-item__dropdown--open {
+  border-bottom-left-radius: var(--smallcorners) !important;
+  border-bottom-right-radius: var(--smallcorners) !important;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
