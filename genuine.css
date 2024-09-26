@@ -1,3 +1,43 @@
+/* Custom Icons */
+@font-face {
+  font-family: 'Material Symbols Outlined';
+  font-style: normal;
+  src: url(https://example.com/material-symbols.woff) format('woff');
+}
+
+/* Custom Icon displays when icon name is written and formatted with strikethrough */
+ span[style="text-decoration:line-through"]:not(strong) {
+ font-family: var(--iconfont);
+ font-size: var(--heading-2) !important;
+ color: var(--dark) !important;
+ text-decoration: none !important;
+ vertical-align: middle;
+ line-height: 1rem; 
+ display: inline-block;
+ line-height: 1;
+ text-transform: none;
+ letter-spacing: normal;
+ word-wrap: normal;
+ white-space: nowrap;
+ direction: ltr;
+}
+
+/* Custom Icons Size when Bold */
+span[style="text-decoration:line-through"] strong {
+ font-size: var(--increase) !important;
+}
+
+/* Navigation Folder Item, Icon Before */
+body:not(.header--menu-open) .header-nav-folder-item--active .header-nav-folder-item-content::before {
+ font-family: var(--iconfont) !important; 
+ content: "arrow_forward" !important;
+ font-size: var(--paragraph-2);
+ color: var(--bright) !important; 
+ display: inline-block!important; 
+ vertical-align: middle!important;
+ margin: 0 !important;
+}
+
 /* 4 - TEXT FORMATTING */
 
 /* Formatting Any Word */
