@@ -3,7 +3,7 @@
 /* Material Symbols Styling */
 .material-symbols-outlined {
   font-family: 'Material Symbols Outlined';
-  font-weight: normal;
+  font-weight: var(--medium);
   font-style: normal;
   display: inline-block;
   white-space: nowrap;
