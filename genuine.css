@@ -1,41 +1,64 @@
-/* Custom Icons */
-@font-face {
+/* 2 - CUSTOM ICONS */
+
+/* Material Symbols Styling */
+.material-symbols-outlined {
   font-family: 'Material Symbols Outlined';
+  font-weight: normal;
   font-style: normal;
-  src: url(https://example.com/material-symbols.woff) format('woff');
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'liga';
 }
 
-/* Custom Icon displays when icon name is written and formatted with strikethrough */
- span[style="text-decoration:line-through"]:not(strong) {
- font-family: var(--iconfont);
- font-size: var(--heading-2) !important;
- color: var(--dark) !important;
- text-decoration: none !important;
- vertical-align: middle;
- line-height: 1rem; 
- display: inline-block;
- line-height: 1;
- text-transform: none;
- letter-spacing: normal;
- word-wrap: normal;
- white-space: nowrap;
- direction: ltr;
+/* Custom Icon Styling for Strikethrough */
+span[style="text-decoration:line-through"]:not(strong) {
+  font-family: 'Material Symbols Outlined' !important;
+  font-size: var(--heading-2);
+  color: var(--dark) !important;
+  text-decoration: none !important;
+  vertical-align: middle;
+  display: inline-block;
 }
 
-/* Custom Icons Size when Bold */
+/* Increase Icon Size when Bold */
 span[style="text-decoration:line-through"] strong {
- font-size: var(--increase) !important;
+  font-size: var(--increase) !important;
 }
 
 /* Navigation Folder Item, Icon Before */
 body:not(.header--menu-open) .header-nav-folder-item--active .header-nav-folder-item-content::before {
- font-family: var(--iconfont) !important; 
+ font-family: 'Material Symbols Outlined' !important; 
  content: "arrow_forward" !important;
  font-size: var(--paragraph-2);
  color: var(--bright) !important; 
  display: inline-block!important; 
  vertical-align: middle!important;
  margin: 0 !important;
+}
+
+/* 3 - GENERAL */
+
+/* Inset Section Background Color */
+.page-section.background-width--inset .section-border {
+ background-color: var(--lightest) !important; 
+}
+
+ /* Spacer Blocks Display on Mobile */
+@media (max-width: 767px) {
+  .sqs-block-spacer {
+    height: 20px !important;
+    display: block !important;
+  }
+}
+
+/* Smooth Scroll when User Clicks on Anchor Links */
+html { 
+ scroll-behavior: smooth;
 }
 
 /* 4 - TEXT FORMATTING */
@@ -50,27 +73,63 @@ p, h1, h2, h3, h4 {
   overflow-wrap: normal !important;
 }
 
-h4 {
-  font-family: var(--header-4-font) !important;
+/* Heading 1 */
+h1 { 
+ font-size: var(--heading-1);
+ font-weight: var(--medium);
 }
 
-/* Heading 4, Auto Layout Title & Description when Underlined */
+/* Heading 2 */
+h2 { 
+ font-size: var(--heading-2);
+ font-weight: var(--medium);
+} 
+
+/* Heading 3 */
+h3,
+.header-title-text a,
+.sqs-modal-lightbox-content .lightbox-inner .lightbox-content.lightbox-form-content-background .form-title {
+ font-size: var(--heading-3);
+ font-weight: var(--medium);
+}
+
+/* Heading 4 */
 h4:not(.lesson-title), 
 .list-section-title u,  
 .list-section-title [style*="underline"],
 .list-item-content__description [style*="underline"] 
  {
-font-weight: var(--semi-bold) !important;
-color: var(--bright) !important;
-text-transform: uppercase !important;
-letter-spacing: var(--spacing) !important;
-vertical-align: middle;
-text-decoration: none !important;
+font-family: var(--header-4-font) !important;
+font-size: var(--heading-4);
+ font-weight: var(--semi-bold) !important;
+ color: var(--bright) !important;
+ text-transform: uppercase !important;
+ letter-spacing: var(--spacing) !important;
+ vertical-align: middle;
+ text-decoration: none !important;
 }
 
 /* Paragraph 1 */
 .sqsrte-large {
+ font-size: var(--paragraph-1) !important;
  font-weight: var(--medium) !important; 
+}
+
+/* Paragraph 2 */
+p {
+ font-size:var(--paragraph-2) !important;
+ font-weight: var(--regular); 
+} 
+
+/* Paragraph 3 */ 
+.sqsrte-small { 
+ font-size: var(--paragraph-3) !important;
+ font-weight: var(--regular); 
+}
+
+/* Semi-Bold Font Weight */
+p strong {
+ font-weight: var(--semi-bold) !important;
 }
 
 /* 5 - BUTTONS & LINKS */
@@ -79,11 +138,6 @@ text-decoration: none !important;
 .sqs-block-html a  {
  text-decoration: none; 
  background-image: none;
-}
-
-/* Smooth Scroll when User Clicks on Anchor Links */
-html { 
- scroll-behavior: smooth;
 }
 
 /* Tertiary Button, on Hover */
@@ -136,6 +190,7 @@ html {
 .sqs-block-archive a:hover {
  opacity: var(--opacity) !important;
 }
+
 
 
 /* 6 - NAVIGATION */
