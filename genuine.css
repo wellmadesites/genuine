@@ -3,7 +3,7 @@
 /* Material Symbols Styling */
 .material-symbols-outlined {
   font-family: 'Material Symbols Outlined';
-  font-weight: var(--medium);
+  font-weight: normal;
   font-style: normal;
   display: inline-block;
   white-space: nowrap;
@@ -33,7 +33,7 @@ span[style="text-decoration:line-through"] strong {
 /* Navigation Folder Item, Icon Before */
 body:not(.header--menu-open) .header-nav-folder-item--active .header-nav-folder-item-content::before {
  font-family: 'Material Symbols Outlined' !important; 
- content: "arrow_forward" !important;
+ content: var(--navicon) !important;
  font-size: var(--paragraph-2);
  color: var(--bright) !important; 
  display: inline-block!important; 
@@ -41,24 +41,11 @@ body:not(.header--menu-open) .header-nav-folder-item--active .header-nav-folder-
  margin: 0 !important;
 }
 
-/* 3 - GENERAL */
+/* 3 - INSET SECTIONS */
 
 /* Inset Section Background Color */
 .page-section.background-width--inset .section-border {
  background-color: var(--lightest) !important; 
-}
-
- /* Spacer Blocks Display on Mobile */
-@media (max-width: 767px) {
-  .sqs-block-spacer {
-    height: 20px !important;
-    display: block !important;
-  }
-}
-
-/* Smooth Scroll when User Clicks on Anchor Links */
-html { 
- scroll-behavior: smooth;
 }
 
 /* 4 - TEXT FORMATTING */
@@ -86,19 +73,13 @@ h2 {
 } 
 
 /* Heading 3 */
-h3,
-.header-title-text a,
-.sqs-modal-lightbox-content .lightbox-inner .lightbox-content.lightbox-form-content-background .form-title {
- font-size: var(--heading-3) !important;
- font-weight: var(--medium) !important;
+h3 {
+ font-size: var(--heading-3);
+ font-weight: var(--medium);
 }
 
 /* Heading 4 */
-h4:not(.lesson-title), 
-.list-section-title u,  
-.list-section-title [style*="underline"],
-.list-item-content__description [style*="underline"] 
- {
+h4:not(.lesson-title) {
 font-family: var(--header-4-font) !important;
 font-size: var(--heading-4);
  font-weight: var(--semi-bold) !important;
@@ -132,7 +113,13 @@ p strong {
  font-weight: var(--semi-bold) !important;
 }
 
+
 /* 5 - BUTTONS & LINKS */
+
+/* Smooth Scroll when User Clicks on Anchor Links */
+html { 
+ scroll-behavior: smooth;
+}
 
 /* No Underline on Any Links */
 .sqs-block-html a  {
@@ -190,7 +177,6 @@ p strong {
 .sqs-block-archive a:hover {
  opacity: var(--opacity) !important;
 }
-
 
 
 /* 6 - NAVIGATION */
@@ -271,7 +257,7 @@ display: none;
   margin-top: 0 !important;
 }
 
-/* 7 - COLLECTION PAGES */
+/* 7 - COLLECTIONS */
 
 /* Portfolio Page, Blog Page, and Gallery Reel Page Width on Inset */
 @media(min-width: 767px) { 
@@ -355,7 +341,7 @@ display: none;
  font-weight: var(--semi-bold) !important;
 }
 
-/* 8 - SALE & SOLD OUT */
+/* 8 - SALE & SOLD OUT LABELS */
 
 /* Store Page & Summary Block, Sale & Sold Out */
 .product-mark.sale, 
@@ -424,18 +410,16 @@ display: none;
 
 /* 10 - AUTO LAYOUT SECTION */
 
-/* Auto Layout, Section & Item Title Weight  */
-.list-section-title,
-.list-section-title p,
-.list-item-content__title { 
- font-weight: var(--medium) !important; 
-} 
+/* Auto Layout, Title Size  */
+.list-section-title p{
+font-size: var(--heading-3) !important;
+}
 
-/* Auto Layout, Section Title When Underlined */
+/* Auto Layout, Section Title & Item Title When Underlined  */
 .list-section-title u,  
 .list-section-title [style*="underline"],
-.list-item-content__description [style*="underline"] 
- {
+.list-item-content__description [style*="underline"] {
+ font-family: var(--header-4-font) !important;
  font-size: var(--heading-4);
  font-weight: var(--semi-bold) !important;
  color: var(--bright) !important;
@@ -444,6 +428,13 @@ display: none;
  vertical-align: middle;
  text-decoration: none !important;
 }
+
+/* Auto Layout, Section & Item Title Weight  */
+.list-section-title,
+.list-section-title p,
+.list-item-content__title { 
+ font-weight: var(--medium) !important; 
+} 
 
 /* Auto Layout, Item Button */
 .list-item-content__button {
@@ -604,6 +595,12 @@ display: none !important;
   }
 }
 
+/* Form Title */
+.sqs-modal-lightbox-content .lightbox-inner .lightbox-content.lightbox-form-content-background .form-title {
+ font-size: var(--heading-3);
+ font-weight: var(--medium);
+}
+
 /* Digital Product Block, No Divider */
 .pricing-plan-benefits-divider {
   display: none !important;
@@ -663,6 +660,14 @@ div.sqs-block-opentable-v2 .squarespace-opentable-new-age-wrapper h1 {
  font-weight: var(--regular) !important;
 }
 
+ /* Spacer Blocks Display on Mobile */
+@media (max-width: 767px) {
+  .sqs-block-spacer {
+    height: 20px !important;
+    display: block !important;
+  }
+}
+
 /* 12 - ROUNDED CORNERS */
 
 /* Regular Size Corners */
@@ -717,7 +722,6 @@ div.sqs-block-opentable-v2 .squarespace-opentable-new-age-wrapper,
 .lesson-item .lesson-grid-meta-container,
 .lessons.collection-content-wrapper .grid-image-wrapper, 
 .lessons.collection-content-wrapper .list-grid .grid-item .grid-image,
-/* Lightbox Content */
 .sqs-modal-lightbox-content .lightbox-inner .lightbox-content {
 border-radius: var(--corners) !important;
 }
