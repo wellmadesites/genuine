@@ -108,12 +108,6 @@ p {
  font-weight: var(--regular); 
 }
 
-/* Semi-Bold Font Weight */
-p strong {
- font-weight: var(--semi-bold) !important;
-}
-
-
 /* 5 - BUTTONS & LINKS */
 
 /* Smooth Scroll when User Clicks on Anchor Links */
