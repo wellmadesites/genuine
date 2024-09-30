@@ -167,7 +167,7 @@ html {
 .list-item-content__description a:hover, 
 .image-slide-title:hover,
 .sqs-block-summary-v2 .summary-read-more-link:hover 
-.sqs-block-summary-v2 .summary-metadata-item a:hover,
+.sqs-block-summary-v2 .summary-metadata-item:hover,
 .sqs-block-archive a:hover {
  opacity: var(--opacity) !important;
 }
