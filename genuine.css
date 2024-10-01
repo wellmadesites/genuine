@@ -78,8 +78,11 @@ h3 {
  font-weight: var(--medium);
 }
 
-/* Heading 4 */
-h4:not(.lesson-title) {
+/* Heading 4 & Auto Layout Title when Underlined */
+h4:not(.lesson-title),
+.list-section-title u,  
+.list-section-title [style*="underline"],
+.list-item-content__description [style*="underline"] {
  font-family: var(--header-4-font) !important;
  font-size: var(--heading-4);
  font-weight: var(--bold) !important;
@@ -111,22 +114,11 @@ p {
 
 /* 5 - BUTTONS & LINKS */
 
-/* Smooth Scroll when User Clicks on Anchor Links */
-html { 
- scroll-behavior: smooth;
-}
-
-/* No Underline on Any Links */
-.sqs-block-html a  {
- text-decoration: none; 
- background-image: none;
-}
-
 /* All Buttons */
 .sqs-button-element--primary,
 .sqs-button-element--secondary,
 .sqs-button-element--tertiary {
- font-size: var(--buttons) !important;
+ font-size: var(--paragraph-3) !important;
  text-transform: uppercase !important;
  letter-spacing: var(--spacing) !important;
 }
@@ -135,7 +127,6 @@ html {
 .sqs-button-element--tertiary:hover {
  background: transparent !important;
  opacity: var(--opacity) !important;
- transition: var(--transition) !important;
  text-decoration: underline;
  text-decoration-thickness: 2px;
  text-underline-offset: 7px;
@@ -151,7 +142,91 @@ html {
   width: 100%;
   height: 2px;
 }
-  
+
+/* Read More Link, Blog Page Link Underline Position */
+.blog-more-link {
+  position: relative;
+  display: inline-block;
+}
+
+/* Read More Link, Blog Page Underline Width & Height */
+.blog-more-link:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: -5px !important;
+  height: 2px;
+}
+
+/* Read More Link, Blog Page Size */
+.blog-basic-grid .blog-more-link, 	
+.blog-masonry .blog-more-link, 
+.blog-side-by-side .blog-more-link, 
+.blog-single-column .blog-more-link { 
+ text-transform: uppercase; 
+ letter-spacing: var(--spacing);
+ font-size: var(--paragraph-3);
+ font-weight: var(--bold) !important;
+}
+
+/* Read More Link, Summary Block */
+.summary-read-more-link {
+  font-size: var(--paragraph-3) !important; 
+  font-weight: var(--bold) !important; 
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+  position: relative;
+  background-color: transparent !important;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 7px;
+}
+
+/* Auto Layout, Item Button */
+.list-item-content__button {
+  font-size: var(--paragraph-3) !important; 
+  position: relative;
+  background-color: transparent !important;
+  spacing:  var(--spacing) !important;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 7px;
+}
+
+/* Auto Layout, Item Description Links  */
+.list-item-content__description a, 
+.list-item-content__description u  {
+ color: var(--bright) !important;  
+ text-decoration: none; 
+ background-image: none;
+}
+
+/* Auto Layout, Banner Slideshow Button Padding */
+.user-items-list-item-container.user-items-list-banner-slideshow[data-button-font-unit="rem"] .list-item-content__button {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Auto Layout, Item Button when content is left or right aligned */
+.user-items-list-carousel[data-button-alignment="left"] .list-item-content__button,
+.user-items-list-carousel[data-button-alignment="right"] .list-item-content__button, 
+.user-items-list-item-container.user-items-list-simple[data-button-alignment="left"] .list-item-content__button, 
+.user-items-list-item-container.user-items-list-simple[data-button-alignment="right"] .list-item-content__button {
+  padding: 0.2rem !important;
+}
+
+/* Standard HTML Links, No Underline */
+.sqs-block-html a  {
+ text-decoration: none; 
+ background-image: none;
+}
+
+/* Smooth Scroll to Anchor Links */
+html { 
+ scroll-behavior: smooth;
+}
+
 /* All Links on Hover Become Less Opaque */
 .sqs-block-html a:hover,
  footer .sqs-block-html a:hover,
@@ -181,41 +256,41 @@ html {
 .sqs-block-summary-v2 .summary-metadata-item:hover,
 .sqs-block-archive a:hover {
  opacity: var(--opacity) !important;
-transition: var(--transition) !important;
+ transition: var(--transition) !important;
 }
 
 
 /* 6 - NAVIGATION */
 
-/* Navigation Folder, Padding */
-.header-nav .header-nav-item--folder .header-nav-folder-content .header-nav-folder-item a {
-  display: flex;
-  padding: 0.25rem;
-}
-
-/* Navigation Folder Item, Font Weight */
-.header .header-nav .header-nav-item--folder .header-nav-folder-content {
- font-weight: var(--medium) !important;
- background-color: var(--lightest) !important;   
- margin-left: 0.3rem; 
- padding: 1.1rem;
- min-width: 5rem;
- box-shadow: var(--shadow);
-}
-
-/* Navigation Folder Item, Font when Active */
-body:not(.header--menu-open) .header-nav-folder-item--active .header-nav-folder-item-content {
-background-image: none;
-font-weight: var(--bold) !important;
-}
-
-/* Active Navigation Item, Underline on Hover */
+/* Site Navigation, When Active & on Hover */
 body:not(.header--menu-open) .header-nav-item--active>a, 
 body:not(.header--menu-open) .header-nav-item > a:hover {
  border-bottom: 2px solid var(--bright); 
  background: none;
  background-image: none;
  padding-bottom: 0rem;
+}
+
+/* Navigation Folder, Dropdown Menu Background & Font Weight */
+.header .header-nav .header-nav-item--folder .header-nav-folder-content {
+ font-weight: var(--medium) !important;
+ background-color: var(--lightest) !important;  
+ margin-left: 0.3rem; 
+ padding: 1.1rem;
+ min-width: 5rem;
+ box-shadow: var(--shadow);
+}
+
+/* Navigation Folder, Dropdown Menu Padding */
+.header-nav .header-nav-item--folder .header-nav-folder-content .header-nav-folder-item a {
+  display: flex;
+  padding: 0.25rem;
+}
+
+/* Navigation Folder Item, Font when Active */
+body:not(.header--menu-open) .header-nav-folder-item--active .header-nav-folder-item-content {
+background-image: none;
+font-weight: var(--bold) !important;
 }
 
 /* Hide Social Icons on Desktop View */
@@ -265,7 +340,7 @@ display: none;
 
 /* 7 - COLLECTIONS */
 
-/* Portfolio Page, Blog Page, and Gallery Reel Page Width on Inset */
+/* Store, Portfolio, Blog, and Gallery Reel Page width on Inset */
 @media(min-width: 767px) { 
 .tweak-products-width-inset .products.collection-content-wrapper,
 .tweak-events-stacked-width-inset .events, 
@@ -336,30 +411,20 @@ display: none;
  display: flex;
 }
 
-/* Store Page, Sale & Sold Out */
+/* Store Page, Sale & Sold Out Label */
 .product-mark.sale, 
 .product-mark.sold-out { 
  font-size: var(--paragraph-3) !important;
  font-weight: var(--medium) !important; 
 }
 
-/* Summary Block List, Sale & Sold Out */
-.sqs-block-summary-v2 .summary-block-setting-design-list {
-.product-mark.sale, 
-.product-mark.sold-out {
- top: 0.9rem !important;
- left: 0.9rem !important;
- padding: 0.6rem !important; 
- }
-}
-
-/* Store Page, Sale Color */
+/* Store Page, Sale Label Color */
 .product-mark.sale {
   color: var(--lightest) !important; 
   background-color: var(--bright) !important;
 }
 
-/* Store Page, Sold Out Color */
+/* Store Page, Sold Out Label Color */
 .product-mark.sold-out {
   color: var(--lightest) !important; 
   background-color: var(--dark) !important;
@@ -369,33 +434,6 @@ display: none;
 .eventlist-meta,
 .eventitem-meta {
   color: var(--bright);
-}
-
-/* Blog Page, Read More Link Underline Position */
-.blog-more-link {
-  position: relative;
-  display: inline-block;
-}
-
-/* Blog Page, Read More Link, Underline Width & Height */
-.blog-more-link:after {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 100%;
-  bottom: -5px !important;
-  height: 2px;
-}
-
-/* Blog Page, Read More Link Size */
-.blog-basic-grid .blog-more-link, 	
-.blog-masonry .blog-more-link, 
-.blog-side-by-side .blog-more-link, 
-.blog-single-column .blog-more-link { 
- text-transform: uppercase; 
- letter-spacing: var(--spacing);
- font-size: var(--paragraph-3);
- font-weight: var(--bold) !important;
 }
 
 /* Gallery Section, Caption Alignment */
@@ -413,22 +451,8 @@ display: none;
 /* 8 - AUTO LAYOUT SECTION */
 
 /* Auto Layout, Title Size  */
-.list-section-title p{
+.list-section-title p {
 font-size: var(--heading-3) !important;
-}
-
-/* Auto Layout, Section Title & Item Title When Underlined  */
-.list-section-title u,  
-.list-section-title [style*="underline"],
-.list-item-content__description [style*="underline"] {
- font-family: var(--header-4-font) !important;
- font-size: var(--heading-4);
- font-weight: var(--bold) !important;
- color: var(--bright) !important;
- text-transform: uppercase !important;
- letter-spacing: var(--spacing) !important;
- vertical-align: middle;
- text-decoration: none !important;
 }
 
 /* Auto Layout, Section & Item Title Weight  */
@@ -438,38 +462,27 @@ font-size: var(--heading-3) !important;
  font-weight: var(--medium) !important; 
 } 
 
-/* Auto Layout, Item Button */
+/* Auto Layout, Carousel & Simple List Title Font Size */
+.user-items-list-carousel .list-item-content__title,
+.user-items-list .list-section-title p {
+  font-size: var(--heading-3) !important;
+}
+
+/* Auto Layout, Banner Slideshow Title Font Size */
+.user-items-list-banner-slideshow .list-item-content__title {
+  font-size: var(--heading-2) !important;
+}
+
+/* Auto Layout Item, Description Font Size */
+.list-item-content__description p {
+  font-size: var(--paragraph-2) !important;
+}
+
+/* Auto Layout Item Button */
 .list-item-content__button {
-  font-size: var(--paragraph-3) !important; 
-  position: relative;
-  background-color: transparent !important;
-  spacing:  var(--spacing) !important;
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 7px;
+font-size: var(--paragraph-3) !important;
 }
 
-/* Auto Layout, Item Description Links  */
-.list-item-content__description a, 
-.list-item-content__description u  {
- color: var(--bright) !important;  
- text-decoration: none; 
- background-image: none;
-}
-
-/* Auto Layout, Banner Slideshow Button Padding */
-.user-items-list-item-container.user-items-list-banner-slideshow[data-button-font-unit="rem"] .list-item-content__button{
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
-/* Auto Layout, Item Button when content is left or right aligned */
-.user-items-list-carousel[data-button-alignment="left"] .list-item-content__button,
-.user-items-list-carousel[data-button-alignment="right"] .list-item-content__button, 
-.user-items-list-item-container.user-items-list-simple[data-button-alignment="left"] .list-item-content__button, 
-.user-items-list-item-container.user-items-list-simple[data-button-alignment="right"] .list-item-content__button {
-  padding: 0.2rem !important;
-}
 
 /* 9 - SQUARESPACE BLOCKS */
 
@@ -503,17 +516,14 @@ color: var(--bright) !important;
  font-weight: var(--regular); 
 } 
 
-/* Summary Read More Link */
-.summary-read-more-link {
-  font-size: var(--paragraph-3) !important; 
-  font-weight: var(--bold) !important; 
-  text-transform: uppercase;
-  letter-spacing: var(--spacing);
-  position: relative;
-  background-color: transparent !important;
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 7px;
+/* Summary Block List, Sale & Sold Out */
+.sqs-block-summary-v2 .summary-block-setting-design-list {
+.product-mark.sale, 
+.product-mark.sold-out {
+ top: 0.9rem !important;
+ left: 0.9rem !important;
+ padding: 0.6rem !important; 
+ }
 }
 
 /* Gallery Block, Caption Title */
@@ -774,5 +784,3 @@ border-radius: var(--corners) !important;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
-
-
