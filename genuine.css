@@ -126,7 +126,9 @@ html {
 .sqs-button-element--primary,
 .sqs-button-element--secondary,
 .sqs-button-element--tertiary {
- font-size: var(--buttons) !important;; 
+ font-size: var(--buttons) !important;
+ text-transform: uppercase !important;
+ letter-spacing: var(--spacing) !important;
 }
 
 /* Tertiary Button, on Hover */
