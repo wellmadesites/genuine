@@ -135,6 +135,7 @@ html {
 .sqs-button-element--tertiary:hover {
  background: transparent !important;
  opacity: var(--opacity) !important;
+ transition: var(--transition) !important;
  text-decoration: underline;
  text-decoration-thickness: 2px;
  text-underline-offset: 7px;
@@ -180,6 +181,7 @@ html {
 .sqs-block-summary-v2 .summary-metadata-item:hover,
 .sqs-block-archive a:hover {
  opacity: var(--opacity) !important;
+transition: var(--transition) !important;
 }
 
 
