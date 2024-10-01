@@ -30,7 +30,7 @@ span[style="text-decoration:line-through"] strong {
   font-size: var(--increase) !important;
 }
 
-/* Navigation Folder Item, Icon Before */
+/* Navigation Folder Item, Symbol Before */
 body:not(.header--menu-open) .header-nav-folder-item--active .header-nav-folder-item-content::before {
  font-family: 'Material Symbols Outlined' !important; 
  content: var(--navicon) !important;
@@ -80,9 +80,9 @@ h3 {
 
 /* Heading 4 */
 h4:not(.lesson-title) {
-font-family: var(--header-4-font) !important;
-font-size: var(--heading-4);
- font-weight: var(--semi-bold) !important;
+ font-family: var(--header-4-font) !important;
+ font-size: var(--heading-4);
+ font-weight: var(--bold) !important;
  color: var(--bright) !important;
  text-transform: uppercase !important;
  letter-spacing: var(--spacing) !important;
@@ -108,6 +108,7 @@ p {
  font-weight: var(--regular); 
 }
 
+
 /* 5 - BUTTONS & LINKS */
 
 /* Smooth Scroll when User Clicks on Anchor Links */
@@ -119,6 +120,13 @@ html {
 .sqs-block-html a  {
  text-decoration: none; 
  background-image: none;
+}
+
+/* All Buttons */
+.sqs-button-element--primary,
+.sqs-button-element--secondary,
+.sqs-button-element--tertiary {
+ font-size: var(--buttons) !important;; 
 }
 
 /* Tertiary Button, on Hover */
@@ -194,7 +202,7 @@ html {
 /* Navigation Folder Item, Font when Active */
 body:not(.header--menu-open) .header-nav-folder-item--active .header-nav-folder-item-content {
 background-image: none;
-font-weight: var(--semi-bold) !important;
+font-weight: var(--bold) !important;
 }
 
 /* Active Navigation Item, Underline on Hover */
@@ -302,6 +310,57 @@ display: none;
   font-size: var(--heading-3);
 }
 
+/* Store Page & Summary Block, Sale & Sold Out */
+.product-mark.sale, 
+.product-mark.sold-out, 
+.sqs-block-summary-v2 .product-mark.sale, 
+.sqs-block-summary-v2 .product-mark.sold-out,
+.sold-out .product-details .product-mark.sold-out {
+ letter-spacing: var(--spacing);
+ line-height: .9rem !important;
+ position: absolute !important;
+ text-transform: uppercase;
+ top: 0.9rem;
+ right: 0.9rem;
+ padding: 0.6rem !important; 
+ width: 2.2rem; 
+ border-radius: 50% !important; 
+ height: 2.2rem; 
+ justify-content: center; 
+ align-items: center !important;  
+ text-align: center; 
+ display: flex;
+}
+
+/* Store Page, Sale & Sold Out */
+.product-mark.sale, 
+.product-mark.sold-out { 
+ font-size: var(--paragraph-3) !important;
+ font-weight: var(--medium) !important; 
+}
+
+/* Summary Block List, Sale & Sold Out */
+.sqs-block-summary-v2 .summary-block-setting-design-list {
+.product-mark.sale, 
+.product-mark.sold-out {
+ top: 0.9rem !important;
+ left: 0.9rem !important;
+ padding: 0.6rem !important; 
+ }
+}
+
+/* Store Page, Sale Color */
+.product-mark.sale {
+  color: var(--lightest) !important; 
+  background-color: var(--bright) !important;
+}
+
+/* Store Page, Sold Out Color */
+.product-mark.sold-out {
+  color: var(--lightest) !important; 
+  background-color: var(--dark) !important;
+}
+
 /* Event Page, Meta Color */
 .eventlist-meta,
 .eventitem-meta {
@@ -332,63 +391,8 @@ display: none;
  text-transform: uppercase; 
  letter-spacing: var(--spacing);
  font-size: var(--paragraph-3);
- font-weight: var(--semi-bold) !important;
+ font-weight: var(--bold) !important;
 }
-
-/* 8 - SALE & SOLD OUT LABELS */
-
-/* Store Page & Summary Block, Sale & Sold Out */
-.product-mark.sale, 
-.product-mark.sold-out, 
-.sqs-block-summary-v2 .product-mark.sale, 
-.sqs-block-summary-v2 .product-mark.sold-out,
-.sold-out .product-details .product-mark.sold-out {
- letter-spacing: var(--spacing);
- line-height: .9rem !important;
- position: absolute !important;
- text-transform: uppercase;
- top: 0.9rem;
- right: 0.9rem;
- padding: 0.6rem !important; 
- width: 2.2rem; 
- border-radius: 50% !important; 
- height: 2.2rem; 
- justify-content: center; 
- align-items: center !important;  
- text-align: center; 
- display: flex;
-}
-
-/* Sale & Sold Out */
-.product-mark.sale, 
-.product-mark.sold-out { 
- font-size: var(--paragraph-3) !important;
- font-weight: var(--medium) !important; 
-}
-
-/* Summary Block List, Sale & Sold Out */
-.sqs-block-summary-v2 .summary-block-setting-design-list {
-.product-mark.sale, 
-.product-mark.sold-out {
- top: 0.9rem !important;
- left: 0.9rem !important;
- padding: 0.6rem !important; 
- }
-}
-
-/* Sale Color */
-.product-mark.sale {
-  color: var(--lightest) !important; 
-  background-color: var(--bright) !important;
-}
-
-/* Sold Out Color */
-.product-mark.sold-out {
-  color: var(--lightest) !important; 
-  background-color: var(--dark) !important;
-}
-
-/* 9 - GALLERY SECTION */
 
 /* Gallery Section, Caption Alignment */
 .gallery-caption-grid-simple, 
@@ -402,7 +406,7 @@ display: none;
  transform: scale(.93);
 }
 
-/* 10 - AUTO LAYOUT SECTION */
+/* 8 - AUTO LAYOUT SECTION */
 
 /* Auto Layout, Title Size  */
 .list-section-title p{
@@ -415,7 +419,7 @@ font-size: var(--heading-3) !important;
 .list-item-content__description [style*="underline"] {
  font-family: var(--header-4-font) !important;
  font-size: var(--heading-4);
- font-weight: var(--semi-bold) !important;
+ font-weight: var(--bold) !important;
  color: var(--bright) !important;
  text-transform: uppercase !important;
  letter-spacing: var(--spacing) !important;
@@ -463,7 +467,7 @@ font-size: var(--heading-3) !important;
   padding: 0.2rem !important;
 }
 
-/* 11 - SQUARESPACE BLOCKS */
+/* 9 - SQUARESPACE BLOCKS */
 
 /* Horizontal Line Block */
 .sqs-block-horizontalrule hr {
@@ -486,7 +490,7 @@ color: var(--bright) !important;
 /* Summary Block, Metadata */
 .sqs-block-summary-v2 .summary-metadata-item {
   font-size: var(--paragraph-2) !important;
-  font-weight: var(--semi-bold); 
+  font-weight: var(--bold); 
 }
 
 /* Summary Block, Excerpt */
@@ -498,7 +502,7 @@ color: var(--bright) !important;
 /* Summary Read More Link */
 .summary-read-more-link {
   font-size: var(--paragraph-3) !important; 
-  font-weight: var(--semi-bold) !important; 
+  font-weight: var(--bold) !important; 
   text-transform: uppercase;
   letter-spacing: var(--spacing);
   position: relative;
@@ -662,7 +666,7 @@ div.sqs-block-opentable-v2 .squarespace-opentable-new-age-wrapper h1 {
   }
 }
 
-/* 12 - ROUNDED CORNERS */
+/* 10 - ROUNDED CORNERS */
 
 /* Regular Size Corners */
 .page-section.background-width--inset .section-background, 
@@ -767,3 +771,5 @@ border-radius: var(--corners) !important;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
+
+
