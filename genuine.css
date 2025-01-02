@@ -112,6 +112,11 @@ p {
  font-weight: var(--regular); 
 }
 
+/* Bold Text, Font Weight */ 
+strong {
+  font-weight: var(--medium);
+}
+
 
 /* 5 - BUTTONS & LINKS */
 
