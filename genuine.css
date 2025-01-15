@@ -743,6 +743,7 @@ border-radius: var(--corners) !important;
 .product-details .product-quantity-input input, 
 .ProductItem-gallery-thumbnails-item img, 
 .ProductItem-gallery-thumbnails-item,
+.ProductItem-details .variant-option select, .ProductItem-details .product-quantity-input input,
 .header .header-nav .header-nav-item--folder .header-nav-folder-content, 
  .sqs-search-ui-button-wrapper .search-input,
 .menu-block .menu-selector label.menu-select-labels--active,
