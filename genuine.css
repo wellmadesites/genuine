@@ -12,6 +12,33 @@
  --increase: 150%;
 }
 
+/* Back to Top Button Styling */
+#back-to-top {
+  position: fixed;
+  bottom: 20px; /* Distance from the bottom of the screen */
+  right: 20px; /* Distance from the right edge of the screen */
+  z-index: 1000; /* Ensure it’s on top of other elements */
+  background-color: #333; /* Button background color */
+  color: white; /* Text color */
+  padding: 10px 15px;
+  border-radius: 50px; /* Rounded button */
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  display: none; /* Hidden by default, JavaScript will display it */
+  transition: opacity 0.3s ease;
+}
+
+#back-to-top a {
+  text-decoration: none;
+  color: white;
+}
+
+#back-to-top:hover {
+  background-color: #555; /* Change color on hover */
+}
+
 /* 2 - CUSTOM ICONS */
 
 /* Material Symbols Styling */
