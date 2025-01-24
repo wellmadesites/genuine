@@ -243,15 +243,8 @@ strong {
 
 /* Standard HTML Links, No Underline */
 .sqs-block-html a {
-  font-weight: var(--bold) !important;
+  font-weight: var(--medium) !important;
   text-decoration: none !important;
-  background-image: none;
-}
-
-/* Footer Links */
-#footer-sections p a {
-  font-weight: var(--regular) !important;
-  text-decoration: none; 
   background-image: none;
 }
 
