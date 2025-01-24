@@ -241,19 +241,8 @@ strong {
   padding: 0.2rem !important;
 }
 
-/* Make all links on the site bold */
-a {
-  font-weight: var(--bold) !important;
-  text-decoration: none;
-  background-image: none;
-}
 
-/* Exclude links inside <p> tags in the footer */
-#footer-sections p a {
-  font-weight: var(--regular) !important;
-  text-decoration: none; 
-  background-image: none;
-}
+
 
 /* Smooth Scroll to Anchor Links */
 html { 
