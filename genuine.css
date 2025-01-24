@@ -12,28 +12,25 @@
  --increase: 150%;
 }
 
-/* Back to Top Button Styling */
+/* Back to Top Icon Styling */
 #back-to-top {
   position: fixed;
+  bottom: 20px; /* Distance from the bottom of the screen */
+  right: 20px;  /* Distance from the right edge */
   z-index: 1000; /* Keep it above other elements */
-  background-color: none; /* Button background color */
   display: none; /* Hide by default, shown via JS */
-  justify-content: center;
-  align-items: center;
   cursor: pointer;
-  transition: var(--transition); /* Smooth hover effect */
 }
 
-#back-to-top:hover {
-  transform: scale(1.1); /* Slight zoom effect on hover */
-  color: var(--accent); /* Slightly lighter background on hover */
-}
-
-/* Style for Material Symbols Icon */
 #back-to-top .material-symbols-outlined {
   font-size: var(--heading-2) !important;
   color: var(--black); /* Icon color */
-  line-height: 1;
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+}
+
+#back-to-top .material-symbols-outlined:hover {
+  color: var(--accent); /* Slightly lighter on hover */
+  transform: scale(1.2); /* Slight zoom effect on hover */
 }
 
 /* 2 - CUSTOM ICONS */
