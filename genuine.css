@@ -20,36 +20,26 @@
   z-index: 1000; /* Keep it above other elements */
   width: 50px; /* Square size */
   height: 50px; /* Square size */
-  background-color: #333; /* Button background color */
-  border-radius: (var--smallcorners); /* Slightly rounded corners */
+  background-color: black; /* Button background color */
+  border-radius: 5px; /* Slightly rounded corners */
   display: none; /* Hide by default, shown via JS */
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically */
-  text-align: center;
   cursor: pointer;
-  transition: opacity 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+  transition: transform 0.2s ease, background-color 0.3s ease; /* Smooth hover effect */
   box-shadow: var(--shadow); /* Subtle shadow */
 }
 
 #back-to-top:hover {
   transform: scale(1.1); /* Slight zoom effect on hover */
-  background-color: var(--bright); /* Lighter background on hover */
+  background-color: var(--light); /* Slightly lighter background on hover */
 }
 
-#back-to-top .arrow {
-  color: var(--lightest); /* Arrow color */
-  font-size: 24px; /* Arrow size */
+/* Style for Material Symbols Icon */
+#back-to-top .material-symbols-outlined {
+  font-size: 30px; /* Size of the icon */
+  color: var(--lightest); /* Icon color */
   line-height: 1;
-}
-
-#back-to-top a {
-  text-decoration: none; /* Remove underline from link */
-  display: flex; /* Use flex for centering */
-  width: 100%; /* Ensure it fills the square */
-  height: 100%; /* Ensure it fills the square */
-  justify-content: center; /* Center arrow horizontally */
-  align-items: center; /* Center arrow vertically */
-  color: inherit; /* Inherit the color of the parent */
 }
 
 /* 2 - CUSTOM ICONS */
