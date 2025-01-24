@@ -1,3 +1,11 @@
+:root {
+ --lightest: var(--siteBackgroundColor);
+ --light: var(--shape-block-background-color);
+ --bright: var(--menuOverlayButtonBackgroundColor);
+ --dark: var(--gradientHeaderNavigationColor);
+ --black: var(--paragraphSmallColor);
+}
+
 /* 2 - CUSTOM ICONS */
 
 /* Material Symbols Styling */
