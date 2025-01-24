@@ -263,7 +263,7 @@ strong {
 }
 
 /* Standard HTML Links, No Underline */
-a {
+.sqs-block-html a {
   font-weight: var(--bold) !important;
   text-decoration: none !important;
   background-image: none;
