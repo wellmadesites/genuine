@@ -16,7 +16,7 @@
 #back-to-top {
   position: fixed;
   z-index: 1000; /* Keep it above other elements */
-  background-color: transparent; /* Button background color */
+  background-color: none; /* Button background color */
   display: none; /* Hide by default, shown via JS */
   justify-content: center;
   align-items: center;
