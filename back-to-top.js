@@ -1,16 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
   const backToTopButton = document.getElementById("back-to-top");
 
-  // Show/Hide the Back to Top button when scrolling
+  // Show/Hide Button Based on Scroll Position
   window.addEventListener("scroll", function () {
-    if (window.scrollY > 300) { // Show button after scrolling down 300px
-      backToTopButton.style.display = "block";
+    const scrollHeight = document.documentElement.scrollHeight; // Total page height
+    const scrollPosition = window.scrollY; // Current scroll position
+    const viewportHeight = window.innerHeight; // Height of the visible area
+
+    // Show button if scrolled 30% of the total page height
+    if (scrollPosition > (scrollHeight - viewportHeight) * 0.3) {
+      backToTopButton.style.display = "flex"; // Use flex to center content
     } else {
       backToTopButton.style.display = "none";
     }
   });
 
-  // Scroll smoothly to the top when the button is clicked
+  // Smooth Scroll to Top
   backToTopButton.addEventListener("click", function (e) {
     e.preventDefault();
     window.scrollTo({
