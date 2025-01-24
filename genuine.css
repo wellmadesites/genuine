@@ -15,30 +15,24 @@
 /* Back to Top Button Styling */
 #back-to-top {
   position: fixed;
-  bottom: 20px; /* Distance from the bottom of the screen */
-  right: 20px;  /* Distance from the right edge */
   z-index: 1000; /* Keep it above other elements */
-  width: 50px; /* Square size */
-  height: 50px; /* Square size */
-  background-color: black; /* Button background color */
-  border-radius: 5px; /* Slightly rounded corners */
+  background-color: transparent; /* Button background color */
   display: none; /* Hide by default, shown via JS */
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
-  transition: transform 0.2s ease, background-color 0.3s ease; /* Smooth hover effect */
-  box-shadow: var(--shadow); /* Subtle shadow */
+  transition: var(--transition); /* Smooth hover effect */
 }
 
 #back-to-top:hover {
   transform: scale(1.1); /* Slight zoom effect on hover */
-  background-color: var(--light); /* Slightly lighter background on hover */
+  color: var(--accent); /* Slightly lighter background on hover */
 }
 
 /* Style for Material Symbols Icon */
 #back-to-top .material-symbols-outlined {
-  font-size: 30px; /* Size of the icon */
-  color: var(--lightest); /* Icon color */
+  font-size: var(--heading-2) !important;
+  color: var(--black); /* Icon color */
   line-height: 1;
 }
 
