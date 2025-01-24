@@ -249,7 +249,7 @@ strong {
 }
 
 /* Footer Links */
-.sqs-block-html a  {
+.sqs-block-html a p {
  font-weight: var(--regular) !important;
  text-decoration: none; 
  background-image: none;
