@@ -12,28 +12,6 @@
  --increase: 150%;
 }
 
-/* Back to Top Icon Styling */
-#back-to-top {
-  position: fixed;
-  bottom: 20px; /* Distance from the bottom of the screen */
-  right: 20px;  /* Distance from the right edge */
-  z-index: 1000; /* Keep it above other elements */
-  display: none; /* Hide by default, shown via JS */
-  cursor: pointer;
-}
-
-#back-to-top .material-symbols-outlined {
-  font-size: var(--heading-2) !important;
-  transform: scale(1.2);
-  color: var(--black); /* Icon color */
-  transition: var(--transition); /* Smooth hover effect */
-}
-
-#back-to-top .material-symbols-outlined:hover {
-  color: var(--accent); /* Slightly lighter on hover */
-  transform: scale(1.2); /* Slight zoom effect on hover */
-}
-
 /* 2 - CUSTOM ICONS */
 
 /* Material Symbols Styling */
