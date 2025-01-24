@@ -1,17 +1,16 @@
-// Back to Top Button Logic
 document.addEventListener("DOMContentLoaded", function () {
   const backToTopButton = document.getElementById("back-to-top");
 
-  // Show/Hide Button Based on Scroll Position
+  // Show/Hide the Back to Top button when scrolling
   window.addEventListener("scroll", function () {
-    if (window.scrollY > 300) { // Show when scrolled down 300px
+    if (window.scrollY > 300) { // Show button after scrolling down 300px
       backToTopButton.style.display = "block";
     } else {
       backToTopButton.style.display = "none";
     }
   });
 
-  // Smooth Scroll to Top
+  // Scroll smoothly to the top when the button is clicked
   backToTopButton.addEventListener("click", function (e) {
     e.preventDefault();
     window.scrollTo({
