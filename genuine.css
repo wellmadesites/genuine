@@ -55,6 +55,39 @@ body:not(.header--menu-open) .header-nav-folder-item--active .header-nav-folder-
  margin: 0 !important;
 }
 
+/* Back to Top Icon Styling */
+#back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1000;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--lightest);
+  border-radius: var(--smallcorners);
+  opacity: 0;
+  pointer-events: none;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Back to Top Icon */
+#back-to-top .material-symbols-outlined {
+  font-size: var(--heading-3) !important;
+  color: var(--dark) !important;
+  transition: var(--transition);
+}
+
+/* Back to Top Icon on Hover */
+#back-to-top .material-symbols-outlined:hover {
+  opacity: var(--opacity);
+}
+
+
 /* 3 - INSET SECTIONS */
 
 /* Inset Section Background Color */
