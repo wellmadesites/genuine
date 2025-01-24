@@ -24,8 +24,9 @@
 
 #back-to-top .material-symbols-outlined {
   font-size: var(--heading-2) !important;
+  transform: scale(1.2);
   color: var(--black); /* Icon color */
-  transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effect */
+  transition: var(--transition); /* Smooth hover effect */
 }
 
 #back-to-top .material-symbols-outlined:hover {
