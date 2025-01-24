@@ -1,17 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
   const backToTopButton = document.getElementById("back-to-top");
 
-  // Show/Hide Button Based on Scroll Position
+  // Show/Hide Button Gradually Based on Scroll Position
   window.addEventListener("scroll", function () {
     const scrollHeight = document.documentElement.scrollHeight; // Total page height
     const scrollPosition = window.scrollY; // Current scroll position
     const viewportHeight = window.innerHeight; // Height of the visible area
 
-    // Show button if scrolled 30% of the total page height
+    // If scrolled more than 30% of the page, fade in the button
     if (scrollPosition > (scrollHeight - viewportHeight) * 0.3) {
-      backToTopButton.style.display = "flex"; // Use flex to center content
+      backToTopButton.style.opacity = "1"; // Fully visible
+      backToTopButton.style.pointerEvents = "auto"; // Enable clicking
     } else {
-      backToTopButton.style.display = "none";
+      backToTopButton.style.opacity = "0"; // Fully transparent
+      backToTopButton.style.pointerEvents = "none"; // Disable clicking
     }
   });
 
