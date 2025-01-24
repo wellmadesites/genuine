@@ -241,8 +241,19 @@ strong {
   padding: 0.2rem !important;
 }
 
+/* Standard HTML Links, No Underline */
+a {
+  font-weight: var(--bold) !important;
+  text-decoration: none !important;
+  background-image: none;
+}
 
-
+/* Footer Links */
+#footer-sections p a {
+  font-weight: var(--regular) !important;
+  text-decoration: none; 
+  background-image: none;
+}
 
 /* Smooth Scroll to Anchor Links */
 html { 
