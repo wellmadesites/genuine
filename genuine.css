@@ -241,16 +241,18 @@ strong {
   padding: 0.2rem !important;
 }
 
-/* Standard HTML Links, No Underline */
-.sqs-block-html a  {
- font-weight: var(--bold) !important;
- text-decoration: none; 
- background-image: none;
+/* Make all links on the site bold */
+a {
+  font-weight: var(--bold) !important;
+  text-decoration: none;
+  background-image: none;
 }
 
-/* Footer Links */
-#footer-sections .sqs-block-html a {
- font-weight: var(--regular) !important;
+/* Exclude links inside <p> tags in the footer */
+#footer-sections p a {
+  font-weight: var(--regular) !important;
+  text-decoration: none; 
+  background-image: none;
 }
 
 /* Smooth Scroll to Anchor Links */
