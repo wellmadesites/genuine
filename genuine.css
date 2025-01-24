@@ -10,6 +10,7 @@
  --bright: var(--menuOverlayButtonBackgroundColor);
  --dark: var(--gradientHeaderNavigationColor);
  --black: var(--paragraphSmallColor);
+ --increase: 150%;
 }
 
 /* 2 - CUSTOM ICONS */
