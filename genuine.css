@@ -248,6 +248,13 @@ strong {
  background-image: none;
 }
 
+/* Footer Links */
+.sqs-block-html a  {
+ font-weight: var(--regular) !important;
+ text-decoration: none; 
+ background-image: none;
+}
+
 /* Smooth Scroll to Anchor Links */
 html { 
  scroll-behavior: smooth;
