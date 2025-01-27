@@ -737,6 +737,11 @@ div.sqs-block-opentable-v2 .squarespace-opentable-new-age-wrapper h1 {
   }
 }
 
+/* Code Block, Spacing */
+.fe-6796f36573c9b5138db926fb {
+  grid-template-rows: auto !important;
+}
+
 /* 10 - ROUNDED CORNERS */
 
 /* Regular Size Corners */
