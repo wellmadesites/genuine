@@ -515,13 +515,13 @@ display: none;
 /* 8 - AUTO LAYOUT SECTION */
 
 /* Auto Layout, Carousel & Simple List Section Title Size  */
-.list-section-title p {
+.list-section-title p strong {
 font-size: var(--heading-3) !important;
  font-weight: var(--medium) !important; 
 }
 
 /* Auto Layout, Carousel & Simple List Section Title Size  */
-.list-section-title p strong {
+.list-section-title p {
 font-size: var(--paragraph-1) !important;
  font-weight: var(--regular) !important; 
 }
