@@ -517,12 +517,18 @@ display: none;
 /* Auto Layout, Carousel & Simple List Section Title Size  */
 .list-section-title p strong {
 font-size: var(--heading-3) !important;
- font-weight: var(--medium) !important; 
+ font-weight: var(--medium) !important;
+ line-height: 5rem;
+}
+
+/* Auto Layout, Title Width  */
+.list-section-title, .user-items-list[data-layout-width="inset"] .list-section-title  {
+    max-width: 45rem;
 }
 
 /* Auto Layout, Carousel & Simple List Section Title Size  */
 .list-section-title p {
-font-size: var(--paragraph-1) !important;
+font-size: var(--paragraph-2) !important;
  font-weight: var(--regular) !important; 
 }
 
