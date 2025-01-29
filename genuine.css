@@ -520,6 +520,12 @@ font-size: var(--heading-3) !important;
  font-weight: var(--medium) !important; 
 }
 
+/* Auto Layout, Carousel & Simple List Section Title Size  */
+.list-section-title p strong {
+font-size: var(--paragraph-1) !important;
+ font-weight: var(--regular) !important; 
+}
+
 /* Auto Layout, Banner Slideshow Section Title Size */
 .user-items-list-banner-slideshow .list-item-content__title {
   font-size: var(--heading-2) !important;
