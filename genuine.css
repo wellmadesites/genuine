@@ -626,7 +626,7 @@ color: var(--bright) !important;
 
 /* Newsletter Block, Disclaimer */
 .newsletter-form-footnote p { 
-  color: var(--grey);
+  opacity: 0.33;
 }
 
 /* Accordion Block, No Dividers */
