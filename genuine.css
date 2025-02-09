@@ -129,6 +129,7 @@ h3 {
 h4:not(.lesson-title),
 .list-section-title u,  
 .list-section-title [style*="underline"],
+.list-item-content__description [style*="underline"],
 .list-item-content__description u,
 .course-item .course-item__chapter-title {
  font-family: var(--header-4-font) !important;
