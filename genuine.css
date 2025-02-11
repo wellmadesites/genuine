@@ -12,6 +12,7 @@
  --increase: 150%;
 }
 
+
 /* 2 - CUSTOM ICONS */
 
 /* Material Symbols Styling */
@@ -860,4 +861,61 @@ border-radius: var(--corners) !important;
   border-bottom-right-radius: var(--smallcorners) !important;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+}
+
+/* 11 - BONUS */
+
+/* Promotional Pop-Up Title */
+.sqs-slide-wrapper[data-slide-type="popup-overlay"] .sqs-slide-container[data-slide-type="popup-overlay"] [data-slice-type="heading"]:not([data-content-empty="true"]) h1#sqs-slash-page-header{
+    font-family: var(--heading-font-font-family) !important;
+    font-size: var(--heading-1) !important;
+    letter-spacing: var(--heading-font-letter-spacing) !important;
+    font-weight: var(--medium) !important;
+    line-height:   var(--heading-font-line-height) !important;
+    color: var(--black) !important;
+}
+
+/* Promotional Pop-Up Description */
+[data-slice-type="body"] p, .sqs-modal-lightbox-content .lightbox-inner .lightbox-content .form-wrapper p {
+    font-family: var(--body-font-font-family) !important;
+    font-size: var(--paragraph-2) !important;
+    letter-spacing: var(--body-font-letter-spacing) !important;
+    font-weight: var(--regular) !important;
+    line-height:   var(--body-font-line-height) !important;
+    color: var(--black) !important;
+}
+
+/* Promotional Pop-Up Button */
+.sqs-slide-wrapper[data-slide-type="popup-overlay"] .button-style-solid [data-slice-type="buttons"] a, .sqs-slide-wrapper[data-slide-type="popup-overlay"] .button-style-solid .sqs-slice-custom-form a, .sqs-slide-wrapper[data-slide-type="popup-overlay"] .button-style-solid~.sqs-modal-lightbox .form-wrapper input[type=submit], .sqs-slide-wrapper[data-slide-type="popup-overlay"] .button-style-solid [data-compound-type="popup-overlay-action"] button[type=submit] {
+    background: var(--bright) !important;
+}
+
+/* Promotional Pop-Up Button Corners */
+.sqs-slide-wrapper[data-slide-type="popup-overlay"] .sqs-slide-container[data-slide-type="popup-overlay"] .sqs-slide-layer-content{
+  border-radius: var(--corners) !important;
+}
+
+/* Promotional Pop-Up Button */
+.sqs-slide-wrapper[data-slide-type="popup-overlay"] [data-slice-type="buttons"] ul, .sqs-slide-wrapper[data-slide-type="popup-overlay"] .sqs-slice-custom-form, .sqs-slide-wrapper[data-slide-type="popup-overlay"] .form-wrapper input[type=submit], .sqs-slide-wrapper[data-slide-type="popup-overlay"] [data-compound-type="popup-overlay-action"] button[type=submit]
+{
+font-family: var(--primary-button-font-font-family) !important;
+font-weight:  var(--bold) !important;
+text-transform: var(--primary-button-font-text-transform) !important;
+letter-spacing: var(--primary-button-font-letter-spacing) !important;
+font-size: var(--primary-button-font-font-size) !important;
+      border-top-left-radius: var(--primary-button-rounded-border-top-left-radius);
+    border-top-right-radius: var(--primary-button-rounded-border-top-right-radius);
+    border-bottom-left-radius: var(--primary-button-rounded-border-bottom-left-radius);
+    border-bottom-right-radius: var(--primary-button-rounded-border-bottom-right-radius);
+}
+
+/* Promotional Disclaimer */
+.sqs-slide-wrapper[data-slide-type="popup-overlay"] .sqs-slide-container[data-slide-type="popup-overlay"] [data-compound-type="popup-overlay-action"] .form-disclaimer-text p
+{
+    font-family: var(--body-font-font-family) !important;
+    font-size: var(--paragraph-3) !important;
+    letter-spacing: var(--body-font-letter-spacing) !important;
+    font-weight: var(--regular) !important;
+    line-height:   var(--body-font-line-height) !important;
+    color: grey !important;
 }
