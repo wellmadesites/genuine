@@ -347,6 +347,11 @@ body:not(.header--menu-open) .header-nav-item > a:hover {
  box-shadow: var(--shadow);
 }
 
+/* Navigation Folder, Link Color */
+.header-nav-folder-item a { 
+  color: var(--black) !important;
+}
+
 /* Navigation Folder, Dropdown Menu Padding */
 .header-nav .header-nav-item--folder .header-nav-folder-content .header-nav-folder-item a {
   display: flex;
