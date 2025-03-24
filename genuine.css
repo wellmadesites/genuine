@@ -5,6 +5,12 @@
  --primary-accent: var(--menuOverlayButtonBackgroundColor);
  --secondary-accent: var(--gradientHeaderNavigationColor);
  --body-text: var(--paragraphSmallColor);
+ --padding: 2rem;
+ --opacity: 0.5; 
+ --transition: all 0.8s ease;
+ --grey: hsl(0, 0%, 50%);
+ --shadow: rgba(0, 0, 0, 0.1) -0.25rem 0.5625rem 1.5625rem -0.375rem;
+ --increase: 150%;
 }
 
 /* 2 - CUSTOM ICONS */
