@@ -333,6 +333,11 @@ html {
   display: inline;
 }
 
+/* User Account Text */ 
+.user-accounts-link.loaded .user-accounts-text-link {
+ font-weight: var(--bold);
+}
+
 /* Site Navigation, When Active & on Hover */
 body:not(.header--menu-open) .header-nav-item--active>a, 
 body:not(.header--menu-open) .header-nav-item > a:hover {
