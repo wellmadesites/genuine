@@ -419,6 +419,12 @@ display: none;
   margin-top: 0 !important;
 }
 
+/* Announcement Bar, Font Weight */
+.sqs-announcement-bar-text, .sqs-announcement-bar-text p {
+  font-weight: var(--medium);
+}
+
+
 /* 7 - COLLECTIONS */
 /* Store, Portfolio, Blog, and Gallery Reel Page width on Inset */
 @media(min-width: 767px) { 
