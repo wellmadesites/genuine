@@ -342,6 +342,11 @@ body:not(.header--menu-open) .header-nav-item > a:hover {
  padding-bottom: 0rem;
 }
 
+/* Site Navigation, No Underline */
+body:not(.header--menu-open) .header-nav-item--active .header-nav-folder-title-text {
+  background-size: 0px !important;
+} 
+
 /* Font Weight of Site Navigation */
 .header-layout-nav-center .header-nav .header-nav-item {
   font-weight: var(--bold);
