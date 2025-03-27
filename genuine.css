@@ -334,7 +334,8 @@ html {
 }
 
 /* User Account Text */ 
-.user-accounts-link.loaded .user-accounts-text-link {
+.user-accounts-link.loaded .user-accounts-text-link, 
+.header .cart-text-link {
  font-weight: var(--bold);
 }
 
