@@ -206,7 +206,7 @@ strong {
  font-size: var(--paragraph-3) !important;
  text-transform: uppercase !important;
  letter-spacing: var(--spacing) !important;
-  font-weight: var(--primary-button-font-font-weight);
+  font-weight: var(--primary-button-font-font-weight) !important;
 }
 
 /* Read More Link, Blog Page Link Underline Position */
