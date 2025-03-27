@@ -201,6 +201,14 @@ strong {
   height: 2px;
 }
 
+/* Header Button */
+#siteWrapper .header-actions-action--cta .sqs-button-element--primary {
+ font-size: var(--paragraph-3) !important;
+ text-transform: uppercase !important;
+ letter-spacing: var(--spacing) !important;
+  font-weight: var(--primary-button-font-font-weight);
+}
+
 /* Read More Link, Blog Page Link Underline Position */
 .blog-more-link {
   position: relative;
@@ -334,6 +342,11 @@ body:not(.header--menu-open) .header-nav-item > a:hover {
  padding-bottom: 0rem;
 }
 
+/* Font Weight of Site Navigation */
+.header-layout-nav-center .header-nav .header-nav-item {
+  font-weight: var(--bold);
+}
+
 /* Navigation Folder, Dropdown Menu Background & Font Weight */
 .header .header-nav .header-nav-item--folder .header-nav-folder-content {
  font-weight: var(--medium) !important;
@@ -456,6 +469,11 @@ display: none;
   font-size: var(--heading-3);
 }
 
+/* Store Page, Product Item Price Font Weight */
+.ProductItem .ProductItem-details .product-price {
+  font-weight: var(--bold);
+}
+
 /* Store Page & Summary Block, Sale & Sold Out */
 .product-mark.sale, 
 .product-mark.sold-out, 
@@ -513,6 +531,11 @@ display: none;
 /* Gallery Section, Slideshow Reel, Space In Between Images */
 .gallery-reel-item img {
  transform: scale(.93);
+}
+
+/* Video Library, Pagination Font */ 
+.lesson-item-pagination-link .lesson-item-pagination-title {
+  font-weight: var(--bold);
 }
 
 /* 8 - AUTO LAYOUT SECTION */
@@ -737,6 +760,11 @@ ul.archive-group-list:not(.sqs-block-archive .archive-block-setting-layout-dropd
   padding-bottom: 0.625rem;
   line-height: 1.25rem;
   display: inline-block;
+}
+
+/* Menu Item Font Weight */
+.menu-block .menu-item-price-bottom {
+  font-weight: var(--bold);
 }
 
 /* Open Table Button */
