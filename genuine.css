@@ -79,7 +79,7 @@ body:not(.header--menu-open) .header-nav-folder-item--active .header-nav-folder-
 /* Back to Top Icon */
 #back-to-top .material-symbols-outlined {
   font-size: var(--heading-3) !important;
-  color: var(--secondary-accent) !important;
+  color: var(--primary-accent) !important;
   transition: var(--transition);
 }
 
