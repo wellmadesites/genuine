@@ -343,8 +343,8 @@ html {
 body:not(.header--menu-open) .header-nav-item--active>a, 
 body:not(.header--menu-open) .header-nav-item > a:hover {
  border-bottom: 2px solid var(--primary-accent); 
- background: none;
- background-image: none;
+ background: none !important;
+ background-image: none !important;
  padding-bottom: 0rem;
 }
 
