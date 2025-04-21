@@ -336,7 +336,7 @@ html {
 /* User Account Text */ 
 .user-accounts-link.loaded .user-accounts-text-link, 
 .header .cart-text-link {
- font-weight: var(--bold);
+ font-weight: var(--bold) !important;
 }
 
 /* Site Navigation, When Active & on Hover */
@@ -360,7 +360,7 @@ body:not(.header--menu-open) .header-nav-item .header-nav-folder-item--active .h
 
 /* Font Weight of Site Navigation */
 .header-layout-nav-center .header-nav .header-nav-item {
-  font-weight: var(--bold);
+  font-weight: var(--bold) !important;
 }
 
 /* Navigation Folder, Dropdown Menu Background & Font Weight */
