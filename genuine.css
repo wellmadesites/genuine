@@ -353,6 +353,11 @@ body:not(.header--menu-open) .header-nav-item--active .header-nav-folder-title-t
   background-size: 0px !important;
 } 
 
+/* Site Navigation, Active Page No Underline */
+body:not(.header--menu-open) .header-nav-item .header-nav-folder-item--active .header-nav-folder-item-content {
+ background-image: none;
+}
+
 /* Font Weight of Site Navigation */
 .header-layout-nav-center .header-nav .header-nav-item {
   font-weight: var(--bold);
