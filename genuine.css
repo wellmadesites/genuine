@@ -359,7 +359,7 @@ body:not(.header--menu-open) .header-nav-item .header-nav-folder-item--active .h
 }
 
 /* Font Weight of Site Navigation */
-.header-layout-nav-center .header-nav .header-nav-item {
+.header-nav .header-nav-item {
   font-weight: var(--bold) !important;
 }
 
