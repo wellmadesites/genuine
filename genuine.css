@@ -363,6 +363,12 @@ body:not(.header--menu-open) .header-nav-item .header-nav-folder-item--active .h
   font-weight: var(--bold) !important;
 }
 
+/* Padding Around Folder in Site Navigation */
+.header .header-nav-wrapper a, 
+.header .language-item a {
+  padding: 0 !important;
+}
+
 /* Navigation Folder, Dropdown Menu Background & Font Weight */
 .header .header-nav .header-nav-item--folder .header-nav-folder-content {
  font-weight: var(--medium) !important;
