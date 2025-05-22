@@ -348,14 +348,16 @@ body:not(.header--menu-open) .header-nav-item > a:hover {
  padding-bottom: 0rem !important;
 }
 
-/* Site Navigation, No Underline */
-body:not(.header--menu-open) .header-nav-item--active .header-nav-folder-title-text {
-  background-size: 0px !important;
-} 
+/* Site Navigation, Active Menu No Underline */
+body:not(.header--menu-open) .header-nav-item--active .header-nav-folder-title-text, 
+body:not(.header--menu-open) .header-nav-item--active>a:not(.header-nav-folder-title) {
+ text-decoration: none !important;
+}
 
 /* Site Navigation, Active Page No Underline */
 body:not(.header--menu-open) .header-nav-item .header-nav-folder-item--active .header-nav-folder-item-content {
  background-image: none;
+ text-decoration: none !important;
 }
 
 /* Font Weight of Site Navigation */
