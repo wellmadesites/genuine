@@ -1,5 +1,16 @@
 
 :root {
+ --heading-1: var(--heading-1-size);
+ --heading-2: var(--heading-2-size);
+ --heading-3: var(--heading-3-size);
+ --heading-4: var(--heading-4-size);
+ --paragraph-1: var(--large-text-size);
+ --paragraph-2: var(--normal-text-size);
+ --paragraph-3: var(--small-text-size);
+ --buttons: var(--small-text-size);
+ --regular: var(--body-font-font-weight); 
+ --medium: var(--heading-font-font-weight);
+ --bold: var(--meta-font-font-weight);
  --background-color: var(--siteBackgroundColor);
  --secondary-background: var(--shape-block-background-color);
  --primary-accent: var(--menuOverlayButtonBackgroundColor);
