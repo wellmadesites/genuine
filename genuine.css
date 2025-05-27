@@ -147,7 +147,7 @@ h4:not(.lesson-title),
  font-size: var(--heading-4)!important;
  font-weight: var(--bold) !important;
  color: var(--primary-accent) !important;
- text-transform: uppercase !important;
+ text-transform: var(--transform) !important;
  letter-spacing: var(--spacing) !important;
  vertical-align: middle;
  text-decoration: none !important;
