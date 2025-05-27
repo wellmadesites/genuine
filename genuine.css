@@ -11,6 +11,8 @@
  --regular: var(--body-font-font-weight); 
  --medium: var(--heading-font-font-weight);
  --bold: var(--meta-font-font-weight);
+ --body: var(--body-font-font-family);
+ --heading: var(--header-font-font-family);
  --background-color: var(--siteBackgroundColor);
  --secondary-background: var(--shape-block-background-color);
  --primary-accent: var(--menuOverlayButtonBackgroundColor);
@@ -212,12 +214,12 @@ strong {
   height: 2px;
 }
 
-/* Header Button */
+/* Header Navigation Button */
 #siteWrapper .header-actions-action--cta .sqs-button-element--primary {
  font-size: var(--paragraph-3) !important;
  text-transform: uppercase !important;
  letter-spacing: var(--spacing) !important;
-  font-weight: var(--primary-button-font-font-weight) !important;
+ font-weight: var(--primary-button-font-font-weight) !important;
 }
 
 /* Read More Link, Blog Page Link Underline Position */
@@ -908,7 +910,8 @@ border-radius: var(--corners) !important;
 .menu-block .menu-selector label.menu-select-labels--active,
  .sqs-block-archive .archive-block-setting-layout-dropdown.archive-block-wrapper, 
  .sqs-widgets-audio-player, 
- div.sqs-block-opentable-v2 .squarespace-opentable-button-wrapper .ot-dtp-picker-button { border-radius: var(--smallcorners) !important; 
+ div.sqs-block-opentable-v2 .squarespace-opentable-button-wrapper .ot-dtp-picker-button { 
+  border-radius: var(--smallcorners) !important; 
 }
 
 /* Product Page, Full Bleed, Rounded Inside Corners */
@@ -940,42 +943,42 @@ border-radius: var(--corners) !important;
 
 /* Accordion Block, Description when Open */
 .sqs-block-accordion .accordion-item__dropdown--open {
-  border-bottom-left-radius: var(--smallcorners) !important;
-  border-bottom-right-radius: var(--smallcorners) !important;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
+ border-bottom-left-radius: var(--smallcorners) !important;
+ border-bottom-right-radius: var(--smallcorners) !important;
+ border-top-left-radius: 0px;
+ border-top-right-radius: 0px;
 }
 
 /* 11 - BONUS */
 
 /* Promotional Pop-Up Title */
 .sqs-slide-wrapper[data-slide-type="popup-overlay"] .sqs-slide-container[data-slide-type="popup-overlay"] [data-slice-type="heading"]:not([data-content-empty="true"]) h1#sqs-slash-page-header{
-    font-family: var(--heading-font-font-family) !important;
-    font-size: var(--heading-1) !important;
-    letter-spacing: var(--heading-font-letter-spacing) !important;
-    font-weight: var(--medium) !important;
-    line-height:   var(--heading-font-line-height) !important;
-    color: var(--body-text) !important;
+ font-family: var(--heading) !important;
+ font-size: var(--heading-1) !important;
+ letter-spacing: var(--heading-font-letter-spacing) !important;
+ font-weight: var(--medium) !important;
+ line-height: var(--heading-font-line-height) !important;
+ color: var(--body-text) !important;
 }
 
 /* Promotional Pop-Up Description */
 [data-slice-type="body"] p, .sqs-modal-lightbox-content .lightbox-inner .lightbox-content .form-wrapper p {
-    font-family: var(--body-font-font-family) !important;
-    font-size: var(--paragraph-2) !important;
-    letter-spacing: var(--body-font-letter-spacing) !important;
-    font-weight: var(--regular) !important;
-    line-height:   var(--body-font-line-height) !important;
-    color: var(--body-text) !important;
+ font-family: var(--body) !important;
+ font-size: var(--paragraph-2) !important;
+ letter-spacing: var(--body-font-letter-spacing) !important;
+ font-weight: var(--regular) !important;
+ line-height: var(--body-font-line-height) !important;
+ color: var(--body-text) !important;
 }
 
 /* Promotional Pop-Up Button */
 .sqs-slide-wrapper[data-slide-type="popup-overlay"] .button-style-solid [data-slice-type="buttons"] a, .sqs-slide-wrapper[data-slide-type="popup-overlay"] .button-style-solid .sqs-slice-custom-form a, .sqs-slide-wrapper[data-slide-type="popup-overlay"] .button-style-solid~.sqs-modal-lightbox .form-wrapper input[type=submit], .sqs-slide-wrapper[data-slide-type="popup-overlay"] .button-style-solid [data-compound-type="popup-overlay-action"] button[type=submit] {
-    background: var(--primary-accent) !important;
+ background: var(--primary-accent) !important;
 }
 
 /* Promotional Pop-Up Button Corners */
 .sqs-slide-wrapper[data-slide-type="popup-overlay"] .sqs-slide-container[data-slide-type="popup-overlay"] .sqs-slide-layer-content{
-  border-radius: var(--corners) !important;
+ border-radius: var(--corners) !important;
 }
 
 /* Promotional Pop-Up Button */
@@ -986,19 +989,21 @@ font-weight:  var(--bold) !important;
 text-transform: var(--primary-button-font-text-transform) !important;
 letter-spacing: var(--primary-button-font-letter-spacing) !important;
 font-size: var(--primary-button-font-font-size) !important;
-      border-top-left-radius: var(--primary-button-rounded-border-top-left-radius);
-    border-top-right-radius: var(--primary-button-rounded-border-top-right-radius);
-    border-bottom-left-radius: var(--primary-button-rounded-border-bottom-left-radius);
-    border-bottom-right-radius: var(--primary-button-rounded-border-bottom-right-radius);
+border-top-left-radius: var(--primary-button-rounded-border-top-left-radius);
+border-top-right-radius: var(--primary-button-rounded-border-top-right-radius);
+border-bottom-left-radius: var(--primary-button-rounded-border-bottom-left-radius);
+border-bottom-right-radius: var(--primary-button-rounded-border-bottom-right-radius);
 }
 
 /* Promotional Disclaimer */
 .sqs-slide-wrapper[data-slide-type="popup-overlay"] .sqs-slide-container[data-slide-type="popup-overlay"] [data-compound-type="popup-overlay-action"] .form-disclaimer-text p
 {
-    font-family: var(--body-font-font-family) !important;
-    font-size: var(--paragraph-3) !important;
-    letter-spacing: var(--body-font-letter-spacing) !important;
-    font-weight: var(--regular) !important;
-    line-height:   var(--body-font-line-height) !important;
-    color: grey !important;
+ font-family: var(--body-font-font-family) !important;
+ font-size: var(--paragraph-3) !important;
+ letter-spacing: var(--body-font-letter-spacing) !important;
+ font-weight: var(--regular) !important;
+ line-height:   var(--body-font-line-height) !important;
+ color: grey !important;
 }
+
+
