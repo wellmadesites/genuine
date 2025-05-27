@@ -352,6 +352,7 @@ body:not(.header--menu-open) .header-nav-item > a:hover {
 body:not(.header--menu-open) .header-nav-item--active .header-nav-folder-title-text, 
 body:not(.header--menu-open) .header-nav-item--active>a:not(.header-nav-folder-title) {
  text-decoration: none !important;
+ background-image: none !important;
 }
 
 /* Site Navigation, Active Page No Underline */
