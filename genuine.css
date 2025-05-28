@@ -363,6 +363,7 @@ body:not(.header--menu-open) .header-nav-item > a:hover {
  background: none !important;
  background-image: none !important;
  padding-bottom: 0rem !important;
+ line-height: inherit; 
 }
 
 /* Site Navigation, Active Menu No Underline */
