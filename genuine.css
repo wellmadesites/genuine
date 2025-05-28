@@ -18,6 +18,7 @@
  --primary-accent: var(--menuOverlayButtonBackgroundColor);
  --secondary-accent: var(--gradientHeaderNavigationColor);
  --body-text: var(--paragraphSmallColor);
+ --icon-font: 'Material Symbols Outlined';
  --padding: 2rem;
  --opacity: 0.5; 
  --transition: all 0.8s ease;
@@ -30,7 +31,7 @@
 
 /* Material Symbols Styling */
 .material-symbols-outlined {
-  font-family: 'Material Symbols Outlined';
+  font-family: var(--icon-font);
   font-weight: normal;
   font-style: normal;
   display: inline-block;
