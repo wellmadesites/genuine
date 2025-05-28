@@ -54,7 +54,7 @@ span[style="text-decoration:line-through"]:not(strong) {
  display: inline-block;
  line-height: 1;
  position: relative;
- top: -2px;
+ top: -1px;
 }
 
 /* Increase Icon Size when Bold */
