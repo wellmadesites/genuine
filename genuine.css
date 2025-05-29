@@ -356,27 +356,32 @@ html {
  font-weight: var(--bold) !important;
 }
 
-/* Site Navigation, When Active & on Hover */
-body:not(.header--menu-open) .header-nav-item--active>a, 
+/* Site Navigation - Default State (prevents jump on hover by reserving space) */
+.header-nav-item > a {
+  border-bottom: 2px solid transparent;
+  padding-bottom: 0rem !important;
+  line-height: inherit;
+  background: none !important;
+  background-image: none !important;
+}
+
+/* Site Navigation - When Active or Hovered */
+body:not(.header--menu-open) .header-nav-item--active > a, 
 body:not(.header--menu-open) .header-nav-item > a:hover {
- border-bottom: 2px solid var(--primary-accent); 
- background: none !important;
- background-image: none !important;
- padding-bottom: 0rem !important;
- line-height: inherit; 
+  border-bottom: 2px solid var(--primary-accent);
 }
 
-/* Site Navigation, Active Menu No Underline */
+/* Active Menu - No Underline for Folder Titles */
 body:not(.header--menu-open) .header-nav-item--active .header-nav-folder-title-text, 
-body:not(.header--menu-open) .header-nav-item--active>a:not(.header-nav-folder-title) {
- text-decoration: none !important;
- background-image: none !important;
+body:not(.header--menu-open) .header-nav-item--active > a:not(.header-nav-folder-title) {
+  text-decoration: none !important;
+  background-image: none !important;
 }
 
-/* Site Navigation, Active Page No Underline */
+/* Active Page Inside Folder - No Underline */
 body:not(.header--menu-open) .header-nav-item .header-nav-folder-item--active .header-nav-folder-item-content {
- background-image: none;
- text-decoration: none !important;
+  background-image: none;
+  text-decoration: none !important;
 }
 
 /* Font Weight of Site Navigation */
