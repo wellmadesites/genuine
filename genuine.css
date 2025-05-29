@@ -600,6 +600,13 @@ display: none;
  transform: scale(.93);
 }
 
+/* Gallery Section, Fullscreen on Mobile Height */
+@media screen and (max-width: 767px)  {
+.gallery-fullscreen-slideshow[data-width="full"] {
+    height: 50% !important;
+  }
+}
+
 /* Video Library, Pagination Font */ 
 .lesson-item-pagination-link .lesson-item-pagination-title {
   font-weight: var(--bold);
