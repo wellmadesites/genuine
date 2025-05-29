@@ -62,6 +62,19 @@ span[style="text-decoration:line-through"] strong {
   font-size: var(--increase) !important;
 }
 
+/* Custom Icons Added before the Site Title */
+.header-title-text a::before { 
+   font-family: var(--icon-font);
+   color: var(--logo-icon-color) !important;
+   content: var(--logo-icon) !important;
+   display: inline-block !important;
+   vertical-align: middle !important;
+   margin-right: 0.5rem;
+   line-height: 1;
+   position: relative;
+   top: -1px;
+}
+
 /* Navigation Folder Item, Symbol Before */
 body:not(.header--menu-open) .header-nav-folder-item--active .header-nav-folder-item-content::before {
  font-family: 'Material Symbols Outlined' !important; 
