@@ -593,7 +593,13 @@ display: none;
 .list-section-title p strong {
 font-size: var(--heading-3) !important;
  font-weight: var(--medium) !important;
- line-height: 5rem;
+ line-height: 2rem;
+}
+
+/* Auto Layout Title Underlined */
+.list-section-title u {
+  position: relative;
+ line-height: 6rem !important;
 }
 
 /* Auto Layout, Title Width  */
