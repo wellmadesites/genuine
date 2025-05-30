@@ -65,7 +65,7 @@ span[style="text-decoration:line-through"] strong {
 /* Custom Icons Added before the Site Title */
 .header-title-text a::before { 
    font-family: var(--icon-font);
-   color: var(--logo-icon-color) !important;
+   color: var(--primary-accent) !important;
    content: var(--logo-icon) !important;
    display: inline-block !important;
    vertical-align: middle !important;
