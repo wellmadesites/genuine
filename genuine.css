@@ -624,7 +624,13 @@ font-size: var(--heading-2) !important;
 /* Auto Layout Title Underlined */
 .list-section-title u {
   position: relative;
- line-height: 6rem !important;
+ line-height: 0rem !important;
+  padding: -5rem !important;
+}
+
+/* Auto Layout Title Padding */
+.list-section-title p {
+  padding-top: 2rem;
 }
 
 /* Auto Layout, Title Width  */
