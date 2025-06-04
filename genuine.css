@@ -619,18 +619,21 @@ display: none;
 font-size: var(--heading-2) !important;
  font-weight: var(--medium) !important;
  line-height: 2rem;
+ font-family: var(--heading);
 }
 
 /* Auto Layout Title Underlined */
 .list-section-title u {
-  position: relative;
+ position: relative;
  line-height: 0rem !important;
-  padding: -5rem !important;
+ padding: -5rem !important;
 }
 
 /* Auto Layout Title Padding */
 .list-section-title p {
   padding-top: 2rem;
+ font-family: var(--body);
+ font-size: var(--paragraph-2);
 }
 
 /* Auto Layout, Title Width  */
