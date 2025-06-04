@@ -617,9 +617,10 @@ display: none;
 /* Auto Layout, Carousel & Simple List Section Title Size  */
 .list-section-title p strong {
 font-size: var(--heading-2) !important;
- font-weight: var(--medium) !important;
- line-height: 2rem;
- font-family: var(--heading);
+font-weight: var(--medium) !important;
+line-height: 2rem;
+font-family: var(--heading);
+letter-spacing: var(--heading-font-letter-spacing);
 }
 
 /* Auto Layout Title Underlined */
@@ -631,9 +632,11 @@ font-size: var(--heading-2) !important;
 
 /* Auto Layout Title Padding */
 .list-section-title p {
-  padding-top: 2rem;
+ padding-top: 2rem;
  font-family: var(--body);
+ font-weight: var(--regular) !important;
  font-size: var(--paragraph-2);
+ letter-spacing: var(--body-font-letter-spacing);
 }
 
 /* Auto Layout, Title Width  */
