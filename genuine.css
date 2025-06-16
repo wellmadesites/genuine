@@ -12,7 +12,7 @@
  --medium: var(--heading-font-font-weight);
  --bold: var(--meta-font-font-weight);
  --body: var(--body-font-font-family);
- --heading: var(--header-font-font-family);
+ --heading: var(--heading-font-font-family);
  --background-color: var(--siteBackgroundColor);
  --secondary-background: var(--shape-block-background-color);
  --primary-accent: var(--menuOverlayButtonBackgroundColor);
