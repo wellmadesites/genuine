@@ -233,7 +233,7 @@ strong {
 }
 
 /* Header Navigation Button */
-.header-actions-action--cta [data-sqsp-button],
+#siteWrapper .header-actions-action--cta [data-sqsp-button],
 #siteWrapper .header-actions-action--cta .sqs-button-element--primary {
  font-size: var(--paragraph-3) !important;
  text-transform: uppercase !important;
