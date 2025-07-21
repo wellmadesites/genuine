@@ -203,6 +203,7 @@ strong {
 /* 5 - BUTTONS & LINKS */
 
 /* All Buttons */
+[data-sqsp-button],
 .sqs-button-element--primary,
 .sqs-button-element--secondary,
 .sqs-button-element--tertiary {
@@ -232,6 +233,7 @@ strong {
 }
 
 /* Header Navigation Button */
+.header-actions-action--cta [data-sqsp-button],
 #siteWrapper .header-actions-action--cta .sqs-button-element--primary {
  font-size: var(--paragraph-3) !important;
  text-transform: uppercase !important;
