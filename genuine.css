@@ -539,11 +539,15 @@ display: none;
 }
 
 /* Store Page, Product Item Price Font Weight */
+.product-meta .product-price-value,
 .ProductItem .ProductItem-details .product-price {
   font-weight: var(--bold);
 }
 
 /* Store Page & Summary Block, Sale & Sold Out */
+.sold-out-status,
+.sqs-block-summary-v2 .sold-out-status,
+.sold-out .product-details .sold-out-status,
 .product-mark.sale, 
 .product-mark.sold-out, 
 .sqs-block-summary-v2 .product-mark.sale, 
