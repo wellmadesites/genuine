@@ -195,10 +195,6 @@ p {
  font-weight: var(--regular) !important; 
 }
 
-/* Bold Text, Font Weight */ 
-strong {
-  font-weight: var(--medium) !important;
-}
 
 /* 5 - BUTTONS & LINKS */
 
