@@ -186,18 +186,18 @@ h4:not(.lesson-title),
 /* Paragraph 2 */
 p {
  font-size:var(--paragraph-2) !important;
- font-weight: var(--regular); 
+ font-weight: var(--regular) !important; 
 } 
 
 /* Paragraph 3 */ 
 .sqsrte-small { 
  font-size: var(--paragraph-3) !important;
- font-weight: var(--regular); 
+ font-weight: var(--regular) !important; 
 }
 
 /* Bold Text, Font Weight */ 
 strong {
-  font-weight: var(--medium);
+  font-weight: var(--medium) !important;
 }
 
 /* 5 - BUTTONS & LINKS */
