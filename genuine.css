@@ -195,11 +195,6 @@ p {
  font-weight: var(--regular) !important; 
 }
 
-/* Announcement Bar Text */
-.sqs-announcement-bar p {
- font-weight: inherit !important;
-}
-
 
 /* 5 - BUTTONS & LINKS */
 
