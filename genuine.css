@@ -389,6 +389,12 @@ body:not(.header--menu-open) .header-nav-item--active > a:not(.header-nav-folder
   background-image: none !important;
 }
 
+/* Active Page - No Underline for Folder Titles */
+.tweak-global-animations-animation-type-flex .header-nav-item:not(.header-nav-item--folder) a::after, 
+.tweak-global-animations-animation-type-flex .header-nav-folder-item a::after {
+  content: none;
+}
+
 /* Active Page Inside Folder - No Underline */
 body:not(.header--menu-open) .header-nav-item .header-nav-folder-item--active .header-nav-folder-item-content {
   background-image: none;
