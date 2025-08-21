@@ -311,7 +311,8 @@ p {
 }
 
 /* Standard HTML Links, No Underline */
-.sqs-block-html a {
+.sqs-block-html a,
+.tweak-global-animations-animation-type-flex .sqs-block p a {
   font-weight: var(--medium) !important;
   text-decoration: none !important;
   background-image: none;
