@@ -152,7 +152,6 @@ h2 {
 /* Heading 3 */
 h3 {
  font-size: var(--heading-3);
- font-weight: var(--medium);
 }
 
 /* Heading 4, Auto Layout Title, & Course Item Title */
