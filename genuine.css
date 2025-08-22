@@ -174,8 +174,7 @@ h4:not(.lesson-title),
 
 /* Paragraph 1 */
 .sqsrte-large {
- font-size: var(--paragraph-1) !important;
- font-weight: var(--medium) !important; 
+ font-size: var(--paragraph-1) !important; 
 }
 
 /* Paragraph 1, Bold */
