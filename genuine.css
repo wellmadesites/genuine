@@ -402,7 +402,7 @@ body:not(.header--menu-open) .header-nav-item .header-nav-folder-item--active .h
 
 /* Font Weight of Site Navigation */
 .header-nav .header-nav-item {
-  font-weight: var(--bold) !important;
+  font-weight: var(--medium) !important;
 }
 
 /* Padding Around Folder in Site Navigation */
