@@ -400,11 +400,6 @@ body:not(.header--menu-open) .header-nav-item .header-nav-folder-item--active .h
   text-decoration: none !important;
 }
 
-/* Font Weight of Site Navigation */
-.header-nav .header-nav-item {
-  font-weight: var(--medium) !important;
-}
-
 /* Padding Around Folder in Site Navigation */
 .header .header-nav-wrapper a, 
 .header .language-item a {
