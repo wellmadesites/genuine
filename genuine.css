@@ -184,7 +184,6 @@ h4:not(.lesson-title),
 /* Paragraph 2 */
 p {
  font-size:var(--paragraph-2) !important;
- font-weight: var(--regular) !important; 
 } 
 
 /* Paragraph 3 */ 
