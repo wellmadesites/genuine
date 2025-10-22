@@ -946,6 +946,8 @@ border-radius: var(--corners) !important;
 /* Smaller Corners */
 .sqs-block-summary-v2 .summary-item-record-type-event .summary-thumbnail-event-date, 
 .sqs-product-quick-view-button-wrapper .sqs-product-quick-view-button, 
+.product-list .product-list-layout-container[data-product-list-layout="grid"] .product-list-item .product-list-item-link .product-list-image-wrapper .product-list-item-image,
+.product-list .product-list-layout-container[data-product-list-layout="grid"] .product-list-item .product-list-item-link .product-list-image-wrapper .grid-image-wrapper,
 .product-details .product-quantity-input input, 
 .ProductItem-gallery-thumbnails-item img, 
 .ProductItem-gallery-thumbnails-item,
