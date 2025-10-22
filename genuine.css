@@ -534,14 +534,11 @@ display: none;
   font-weight: var(--bold);
 }
 
-/* Store Page & Summary Block, Sale & Sold Out */
+/* Store Page, Sale & Sold Out */
 .sold-out-status,
-.sqs-block-summary-v2 .sold-out-status,
 .sold-out .product-details .sold-out-status,
 .product-mark.sale, 
 .product-mark.sold-out, 
-.sqs-block-summary-v2 .product-mark.sale, 
-.sqs-block-summary-v2 .product-mark.sold-out,
 .sold-out .product-details .product-mark.sold-out {
  letter-spacing: var(--spacing);
  line-height: .9rem !important;
@@ -549,6 +546,26 @@ display: none;
  text-transform: uppercase;
  top: 2.5rem;
  right: 2rem;
+ padding: 0.6rem !important; 
+ width: 2.5rem; 
+ border-radius: 50% !important; 
+ height: 2.5rem; 
+ justify-content: center; 
+ align-items: center !important;  
+ text-align: center; 
+ display: flex;
+}
+
+/* Summary Block, Sale & Sold Out */
+.sqs-block-summary-v2 .sold-out-status,
+.sqs-block-summary-v2 .product-mark.sale, 
+.sqs-block-summary-v2 .product-mark.sold-out {
+ letter-spacing: var(--spacing);
+ line-height: .9rem !important;
+ position: absolute !important;
+ text-transform: uppercase;
+ top: 1rem !important;
+ right: 1rem !important;
  padding: 0.6rem !important; 
  width: 2.5rem; 
  border-radius: 50% !important; 
