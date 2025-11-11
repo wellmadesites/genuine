@@ -178,11 +178,6 @@ h4:not(.lesson-title),
  font-weight: var(--paragraph-1-weight) !important;
 }
 
-/* Paragraph 1, Bold */
-.sqsrte-large strong {
- font-weight: var(--bold) !important; 
-}
-
 /* Paragraph 2 */
 p {
  font-size:var(--paragraph-2) !important;
