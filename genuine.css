@@ -188,6 +188,7 @@ h4:not(.lesson-title),
  .list-section-title [style*="underline"] {
   color: var(--primary-accent) !important;
 }
+}
 
 /* Paragraph 1 */
 .sqsrte-large {
