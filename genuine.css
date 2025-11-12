@@ -644,7 +644,7 @@ display: none;
 /* 8 - AUTO LAYOUT SECTION */
 
 /* Auto Layout, Carousel & Simple List Section Title Size  */
-.list-section-title p * {
+.list-section-title p strong {
 font-size: var(--heading-2) !important;
 font-weight: var(--medium) !important;
 line-height: var(--heading-font-line-height);
