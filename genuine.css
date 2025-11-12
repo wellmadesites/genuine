@@ -178,7 +178,6 @@ h4:not(.lesson-title),
 .course-item .course-item__chapter-title  {
  color: var(--primary-accent) !important;
 }
-}
 
 /* Auto Layout Title Color */
 [data-section-theme="white"],
