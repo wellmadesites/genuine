@@ -662,9 +662,9 @@ letter-spacing: var(--heading-font-letter-spacing);
 /* Auto Layout Title Padding */
 .list-section-title p {
  padding-top: 2rem;
- font-family: var(--body);
+ font-family: var(--body) !important;
  font-weight: var(--regular) !important;
- font-size: var(--paragraph-2);
+ font-size: var(--paragraph-2) !important;
  letter-spacing: var(--body-font-letter-spacing);
 }
 
