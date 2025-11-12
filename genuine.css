@@ -262,13 +262,13 @@ p {
  text-transform: uppercase; 
  letter-spacing: var(--spacing);
  font-size: var(--paragraph-3);
- font-weight: var(--bold) !important;
+ font-weight: var(--tertiary-button-font-font-weight) !important;
 }
 
 /* Read More Link, Summary Block */
 .summary-read-more-link {
   font-size: var(--paragraph-3) !important; 
-  font-weight: var(--bold) !important; 
+  font-weight: var(--tertiary-button-font-font-weight) !important; 
   text-transform: uppercase;
   letter-spacing: var(--spacing);
   position: relative;
@@ -282,6 +282,7 @@ p {
 .list-item-content__button {
   font-size: var(--paragraph-3) !important; 
   position: relative;
+  font-weight: var(--tertiary-button-font-font-weight) !important;
   background-color: transparent !important;
   letter-spacing: var(--spacing) !important;
   text-decoration: underline;
@@ -688,6 +689,7 @@ font-weight: var(--regular) !important;
 /* Auto Layout Item Button */
 .list-item-content__button {
 font-size: var(--paragraph-3) !important;
+font-weight: var(--tertiary-button-font-font-weight) !important;
 }
 
 /* 9 - SQUARESPACE BLOCKS */
