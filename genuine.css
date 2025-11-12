@@ -155,7 +155,7 @@ h3 {
  font-weight: var(--medium);
 }
 
-/* Heading 4, Auto Layout Title, & Course Item Title */
+/* Heading 4, Auto Layout, & Course Item Title */
 h4:not(.lesson-title),
 .list-section-title u,  
 .list-section-title [style*="underline"],
@@ -171,12 +171,22 @@ h4:not(.lesson-title),
  text-decoration: none !important;
 }
 
-/* Heading 4 Color */
-h4:not(.lesson-title), 
+/* Heading 4, Auto Layout Color */
+h4:not(.lesson-title),
 .list-item-content__description [style*="underline"],
 .list-item-content__description u,
-.course-item .course-item__chapter-title {
+.course-item .course-item__chapter-title  {
  color: var(--primary-accent) !important;
+}
+}
+
+/* Auto Layout Title Color */
+[data-section-theme="white"],
+[data-section-theme="light"], 
+[data-section-theme="light-bold"] {
+ .list-section-title u,  
+ .list-section-title [style*="underline"] {
+  color: var(--primary-accent) !important;
 }
 
 /* Paragraph 1 */
