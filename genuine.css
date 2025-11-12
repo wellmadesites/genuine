@@ -159,7 +159,6 @@ h3 {
 h4:not(.lesson-title),
 .list-section-title u,  
 .list-section-title [style*="underline"],
-.list-item-content__title,
 .list-item-content__description [style*="underline"],
 .list-item-content__description u,
 .course-item .course-item__chapter-title {
@@ -643,8 +642,18 @@ display: none;
 
 /* 8 - AUTO LAYOUT SECTION */
 
-/* Auto Layout, Carousel & Simple List Section Title Size  */
-.list-section-title p strong {
+/* Auto Layout Title */
+.user-items-list .list-section-title p {
+ padding-top: 2rem;
+ font-family: var(--body) !important;
+ font-weight: var(--regular) !important;
+ font-size: var(--paragraph-2) !important;
+ letter-spacing: var(--body-font-letter-spacing);
+}
+ 
+ /* Auto Layout, Carousel, Simple List Section Title, Bold */
+.user-items-list .list-section-title p strong,
+.user-items-list .list-section-title p b {
 font-size: var(--heading-2) !important;
 font-weight: var(--medium) !important;
 line-height: var(--heading-font-line-height);
@@ -652,31 +661,16 @@ font-family: var(--heading);
 letter-spacing: var(--heading-font-letter-spacing);
 }
 
-/* Auto Layout Title Underlined */
-.list-section-title u {
+/* Auto Layout Title, Underlined */
+.user-items-list .list-section-title u {
  position: relative;
  line-height: 0rem !important;
  padding: -5rem !important;
 }
 
-/* Auto Layout Title Padding */
-.list-section-title p {
- padding-top: 2rem;
- font-family: var(--body) !important;
- font-weight: var(--regular) !important;
- font-size: var(--paragraph-2) !important;
- letter-spacing: var(--body-font-letter-spacing);
-}
-
-/* Auto Layout, Title Width  */
-.list-section-title, .user-items-list[data-layout-width="inset"] .list-section-title  {
+/* Auto Layout Title Width  */
+.user-items-list .list-section-title, .user-items-list[data-layout-width="inset"] .list-section-title  {
     max-width: 45rem;
-}
-
-/* Auto Layout, Carousel & Simple List Section Title Size  */
-.list-section-title p {
-font-size: var(--paragraph-2) !important;
-font-weight: var(--regular) !important; 
 }
 
 /* Auto Layout, Banner Slideshow Section Title Size */
@@ -684,18 +678,11 @@ font-weight: var(--regular) !important;
   font-size: var(--heading-2) !important;
 }
 
-/* Auto Layout, Carousel & Simple List Item Title Size */
+/* Auto Layout Item, Carousel & Simple List Title Size */
 .user-items-list-carousel .list-item-content__title,
 .user-items-list-simple .list-item-content__title,
-.list-item-content__title {
+.user-items-list .list-item-content__title {
  font-size: var(--paragraph-1) !important;
- font-family: var(--body-font-font-family) !important;
- font-weight: var(--medium) !important; 
-}
-
- /* Auto Layout Item Title */
-.list-item-content__title {
-  font-size: var(--paragraph-1) !important;
  font-family: var(--body-font-font-family) !important;
  font-weight: var(--medium) !important; 
 }
@@ -703,12 +690,6 @@ font-weight: var(--regular) !important;
  /* Auto Layout Item, Description Size */
 .list-item-content__description p {
   font-size: var(--paragraph-2) !important;
-}
-
-/* Auto Layout Item Button */
-.list-item-content__button {
-font-size: var(--paragraph-3) !important;
-font-weight: var(--tertiary-button-font-font-weight) !important;
 }
 
 /* 9 - SQUARESPACE BLOCKS */
