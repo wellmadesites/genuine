@@ -165,11 +165,18 @@ h4:not(.lesson-title),
  font-family: var(--body-font-font-family) !important;
  font-size: var(--heading-4)!important;
  font-weight: var(--bold) !important;
- color: var(--primary-accent) !important;
  text-transform: var(--transform) !important;
  letter-spacing: var(--spacing) !important;
  vertical-align: middle;
  text-decoration: none !important;
+}
+
+/* Heading 4 Color */
+h4:not(.lesson-title), 
+.list-item-content__description [style*="underline"],
+.list-item-content__description u,
+.course-item .course-item__chapter-title {
+ color: var(--primary-accent) !important;
 }
 
 /* Paragraph 1 */
