@@ -159,6 +159,7 @@ h3 {
 h4:not(.lesson-title),
 .list-section-title u,  
 .list-section-title [style*="underline"],
+.list-item-content__title,
 .list-item-content__description [style*="underline"],
 .list-item-content__description u,
 .course-item .course-item__chapter-title {
@@ -685,13 +686,21 @@ font-weight: var(--regular) !important;
 
 /* Auto Layout, Carousel & Simple List Item Title Size */
 .user-items-list-carousel .list-item-content__title,
-.user-items-list-simple .list-item-content__title {
+.user-items-list-simple .list-item-content__title,
+.list-item-content__title {
  font-size: var(--paragraph-1) !important;
  font-family: var(--body-font-font-family) !important;
  font-weight: var(--medium) !important; 
 }
 
-/* Auto Layout Item, Description Size */
+ /* Auto Layout Item Title */
+.list-item-content__title {
+  font-size: var(--paragraph-1) !important;
+ font-family: var(--body-font-font-family) !important;
+ font-weight: var(--medium) !important; 
+}
+ 
+ /* Auto Layout Item, Description Size */
 .list-item-content__description p {
   font-size: var(--paragraph-2) !important;
 }
