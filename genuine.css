@@ -301,11 +301,16 @@ p {
 }
 
 /* Auto Layout, Item Description Links  */
+[data-section-theme="white"],
+[data-section-theme="white-bold"], 
+[data-section-theme="light"],
+[data-section-theme="light-bold"] {
 .list-item-content__description a, 
 .list-item-content__description u  {
  color: var(--primary-accent) !important;  
  text-decoration: none; 
  background-image: none;
+}
 }
 
 /* Auto Layout, Banner Slideshow Button Padding */
