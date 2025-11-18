@@ -180,14 +180,11 @@ h4:not(.lesson-title),
 }
 
 /* Auto Layout Title Color */
-[data-section-theme="white"],
-[data-section-theme="light"], 
-[data-section-theme="light-bold"] {
  .list-section-title u,  
  .list-section-title [style*="underline"] {
   color: var(--primary-accent) !important;
 }
-}
+
 
 /* Paragraph 1 */
 .sqsrte-large {
