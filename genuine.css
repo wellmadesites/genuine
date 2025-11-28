@@ -776,7 +776,7 @@ display: none !important;
 
 /* Accordion Block, Title */
 .accordion-item__title  {
- font-weight: var(--medium) !important; 
+ font-weight: var(--paragraph-1-weight) !important; 
 } 
 
 /* Accordion Block, Title Background Shape */
