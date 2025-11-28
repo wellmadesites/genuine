@@ -857,9 +857,16 @@ ul.archive-group-list:not(.sqs-block-archive .archive-block-setting-layout-dropd
   display: inline-block;
 }
 
-/* Menu Item Font Weight */
+/* Menu Block, Item Title */
+.menu-block .menu-item-title {
+ font-weight: var( --paragraph-1-weight) !important;
+}
+
+/* Menu Item Price */
+.menu-block .menu-item-price-bottom,
 .menu-block .menu-style-classic .menu-item-price-top {
   font-weight: var(--bold) !important;
+  color: var(--primary-accent) !important;
 }
 
 /* Open Table Button */
