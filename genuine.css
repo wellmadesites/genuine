@@ -137,24 +137,6 @@ p, h1, h2, h3, h4 {
   overflow-wrap: normal !important;
 }
 
-/* Heading 1 */
-h1 { 
- font-size: var(--heading-1);
- font-weight: var(--medium);
-}
-
-/* Heading 2 */
-h2 { 
- font-size: var(--heading-2);
- font-weight: var(--medium);
-} 
-
-/* Heading 3 */
-h3 {
- font-size: var(--heading-3);
- font-weight: var(--medium);
-}
-
 /* Heading 4, Auto Layout, & Course Item Title */
 h4:not(.lesson-title),
 .list-section-title u,  
@@ -238,7 +220,8 @@ p {
 
 /* Header Navigation Button */
 #siteWrapper .header-actions-action--cta [data-sqsp-button],
-#siteWrapper .header-actions-action--cta .sqs-button-element--primary {
+#siteWrapper .header-actions-action--cta .sqs-button-element--primary,
+.header--menu-open .header-menu .header-menu-cta {
  font-size: var(--paragraph-3) !important;
  text-transform: uppercase !important;
  letter-spacing: var(--spacing) !important;
@@ -327,7 +310,6 @@ p {
 /* Standard HTML Links, No Underline */
 .sqs-block-html a,
 .tweak-global-animations-animation-type-flex .sqs-block p a {
-  font-weight: var(--medium) !important;
   text-decoration: none !important;
   background-image: none;
 }
@@ -686,7 +668,7 @@ letter-spacing: var(--heading-font-letter-spacing);
 .user-items-list .list-item-content__title {
  font-size: var(--paragraph-1) !important;
  font-family: var(--body-font-font-family) !important;
- font-weight: var(--medium) !important; 
+ font-weight: var(--paragraph-1-weight) !important; 
 }
  
  /* Auto Layout Item, Description Size */
@@ -876,8 +858,8 @@ ul.archive-group-list:not(.sqs-block-archive .archive-block-setting-layout-dropd
 }
 
 /* Menu Item Font Weight */
-.menu-block .menu-item-price-bottom {
-  font-weight: var(--bold);
+.menu-block .menu-style-classic .menu-item-price-top {
+  font-weight: var(--bold) !important;
 }
 
 /* Open Table Button */
