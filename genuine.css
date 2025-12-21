@@ -158,15 +158,14 @@ h4:not(.lesson-title),
 .list-item-content__description [style*="underline"],
 .list-item-content__description u,
 .course-item .course-item__chapter-title  {
- color: var(--primary-accent) !important;
+ color: var(--headingSmallColor) !important;
 }
 
 /* Auto Layout Title Color */
  .list-section-title u,  
  .list-section-title [style*="underline"] {
-  color: var(--primary-accent) !important;
+  color: var(--headingSmallColor) !important;
 }
-
 
 /* Paragraph 1 */
 .sqsrte-large {
