@@ -665,15 +665,10 @@ letter-spacing: var(--heading-font-letter-spacing);
 .user-items-list-carousel .list-item-content__title,
 .user-items-list-simple .list-item-content__title,
 .user-items-list .list-item-content__title {
- font-size: var(--paragraph-1) !important;
  font-family: var(--body-font-font-family) !important;
  font-weight: var(--paragraph-1-weight) !important; 
 }
  
- /* Auto Layout Item, Description Size */
-.list-item-content__description p {
-  font-size: var(--paragraph-2) !important;
-}
 
 /* 9 - SQUARESPACE BLOCKS */
 
