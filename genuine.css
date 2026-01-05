@@ -656,11 +656,6 @@ letter-spacing: var(--heading-font-letter-spacing);
     max-width: 45rem;
 }
 
-/* Auto Layout, Banner Slideshow Section Title Size */
-.user-items-list-banner-slideshow .list-item-content__title {
-  font-size: var(--heading-2) !important;
-}
-
 /* Auto Layout Item, Carousel & Simple List Title Size */
 .user-items-list-carousel .list-item-content__title,
 .user-items-list-simple .list-item-content__title,
