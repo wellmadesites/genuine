@@ -84,7 +84,9 @@ body:not(.header--menu-open) .header-nav-folder-item--active .header-nav-folder-
  display: inline-block!important; 
  vertical-align: middle!important;
  margin: 0 !important;
+ background-image: none !important;
 }
+
 
 /* Back to Top Icon Styling */
 #back-to-top {
