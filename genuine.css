@@ -380,18 +380,6 @@ body:not(.header--menu-open) .header-nav-item > a:hover {
   border-bottom: 2px solid var(--primary-accent);
 }
 
-/* Site Navigation - When Active or Hovered, Background with Lightest Color */
-[data-section-theme="bright"], 
-[data-section-theme="dark"], 
-[data-section-theme="dark-bold"], 
-[data-section-theme="black"], 
-[data-section-theme="black-bold"] {
-body:not(.header--menu-open) .header-nav-item--active > a, 
-body:not(.header--menu-open) .header-nav-item > a:hover {
-  border-bottom: 2px solid var(--background-color) !important;
- }
-}
-
 /* Active Menu - No Underline for Folder Titles */
 body:not(.header--menu-open) .header-nav-item--active .header-nav-folder-title-text, 
 body:not(.header--menu-open) .header-nav-item--active > a:not(.header-nav-folder-title) {
