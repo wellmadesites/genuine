@@ -374,11 +374,30 @@ html {
   background-image: none !important;
 }
 
-/* Site Navigation - When Active or Hovered */
+/* Site Navigation - When Active or Hovered, Background with Light Color */
+[data-section-theme="white"],
+[data-section-theme="white-bold"],
+[data-section-theme="light"], 
+[data-section-theme="light-bold"], 
+[data-section-theme="bright-inverse"] {
 body:not(.header--menu-open) .header-nav-item--active > a, 
 body:not(.header--menu-open) .header-nav-item > a:hover {
-  border-bottom: 2px solid var(--primary-accent);
+ border-bottom: 2px solid var(--primary-accent);
+  }
 }
+
+/* Site Navigation - When Active or Hovered, Background with Dark Color */
+[data-section-theme="bright"], 
+[data-section-theme="dark"], 
+[data-section-theme="dark-bold"], 
+[data-section-theme="black"], 
+[data-section-theme="black-bold"] {
+body:not(.header--menu-open) .header-nav-item--active > a, 
+body:not(.header--menu-open) .header-nav-item > a:hover {
+  border-bottom: 2px solid var(--background-color);
+ }
+}
+
 
 /* Active Menu - No Underline for Folder Titles */
 body:not(.header--menu-open) .header-nav-item--active .header-nav-folder-title-text, 
