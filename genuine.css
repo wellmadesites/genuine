@@ -382,7 +382,7 @@ html {
 [data-section-theme="bright-inverse"] {
 body:not(.header--menu-open) .header-nav-item--active > a, 
 body:not(.header--menu-open) .header-nav-item > a:hover {
- border-bottom: 2px solid var(--primary-accent);
+ border-bottom: 2px solid var(--primary-accent)!important;
   }
 }
 
@@ -394,10 +394,9 @@ body:not(.header--menu-open) .header-nav-item > a:hover {
 [data-section-theme="black-bold"] {
 body:not(.header--menu-open) .header-nav-item--active > a, 
 body:not(.header--menu-open) .header-nav-item > a:hover {
-  border-bottom: 2px solid var(--background-color);
+  border-bottom: 2px solid var(--background-color) !important;
  }
 }
-
 
 /* Active Menu - No Underline for Folder Titles */
 body:not(.header--menu-open) .header-nav-item--active .header-nav-folder-title-text, 
