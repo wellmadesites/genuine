@@ -195,7 +195,7 @@ p {
 .sqs-button-element--secondary,
 .sqs-button-element--tertiary {
  font-size: var(--paragraph-3) !important;
- text-transform: uppercase !important;
+ text-transform: var(--transform) !important;
  letter-spacing: var(--spacing) !important;
 }
 
@@ -250,7 +250,7 @@ p {
 .blog-masonry .blog-more-link, 
 .blog-side-by-side .blog-more-link, 
 .blog-single-column .blog-more-link { 
- text-transform: uppercase; 
+ text-transform: var(--transform) !important; 
  letter-spacing: var(--spacing);
  font-size: var(--paragraph-3);
  font-weight: var(--tertiary-button-font-font-weight) !important;
@@ -260,7 +260,7 @@ p {
 .summary-read-more-link {
   font-size: var(--paragraph-3) !important; 
   font-weight: var(--tertiary-button-font-font-weight) !important; 
-  text-transform: uppercase;
+  text-transform: var(--transform) !important;
   letter-spacing: var(--spacing);
   position: relative;
   background-color: transparent !important;
@@ -372,11 +372,6 @@ html {
   line-height: inherit;
   background: none !important;
   background-image: none !important;
-}
-
-/* Folder Item Line Height */
-.header .header-nav .header-nav-item--folder .header-nav-folder-content {
-  line-height: 2rem !important;
 }
 
 /* Folder in Line with other Links */
