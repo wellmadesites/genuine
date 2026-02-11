@@ -374,6 +374,13 @@ html {
   background-image: none !important;
 }
 
+/* Folder in Line with other Links */
+.header-nav-folder-title-text {
+  line-height: 1;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 /* Site Navigation - When Active or Hovered */
 body:not(.header--menu-open) .header-nav-item--active > a, 
 body:not(.header--menu-open) .header-nav-item > a:hover {
