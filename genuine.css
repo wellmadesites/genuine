@@ -382,7 +382,8 @@ body:not(.header--menu-open) .header-nav-item > a:hover {
 
 /* Active Menu - No Underline for Folder Titles */
 body:not(.header--menu-open) .header-nav-item--active .header-nav-folder-title-text, 
-body:not(.header--menu-open) .header-nav-item--active > a:not(.header-nav-folder-title) {
+body:not(.header--menu-open) .header-nav-item--active > a:not(.header-nav-folder-title),
+.header-menu-nav-item-content .header-nav-folder-title-text {
   text-decoration: none !important;
   background-image: none !important;
 }
