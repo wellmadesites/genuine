@@ -224,7 +224,7 @@ p {
 #siteWrapper .header-actions-action--cta .sqs-button-element--primary,
 .header--menu-open .header-menu .header-menu-cta {
  font-size: var(--paragraph-3) !important;
- text-transform: uppercase !important;
+ text-transform: var(--transform) !important;
  letter-spacing: var(--spacing) !important;
  font-weight: var(--primary-button-font-font-weight) !important;
 }
