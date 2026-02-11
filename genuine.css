@@ -374,6 +374,11 @@ html {
   background-image: none !important;
 }
 
+/* Folder Item Line Height */
+.header .header-nav .header-nav-item--folder .header-nav-folder-content {
+  line-height: 2rem !important;
+}
+
 /* Folder in Line with other Links */
 .header-nav-folder-title-text {
   line-height: 1;
