@@ -204,7 +204,7 @@ p {
  background: transparent !important;
  opacity: var(--opacity) !important;
  text-decoration: underline;
- text-decoration-thickness: 2px;
+ text-decoration-thickness: var(--tertiary-button-stroke);
  text-underline-offset: 7px;
  display: inline-block;
 }
@@ -265,7 +265,7 @@ p {
   position: relative;
   background-color: transparent !important;
   text-decoration: underline;
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: var(--tertiary-button-stroke);
   text-underline-offset: 7px;
 }
 
@@ -277,7 +277,7 @@ p {
   background-color: transparent !important;
   letter-spacing: var(--spacing) !important;
   text-decoration: underline;
-  text-decoration-thickness: 2px;
+  text-decoration-thickness: var(--tertiary-button-stroke);
   text-underline-offset: 7px;
 }
 
@@ -367,7 +367,7 @@ html {
 
 /* Site Navigation - Default State (prevents jump on hover by reserving space) */
 .header-nav-item > a {
-  border-bottom: 2px solid transparent;
+  border-bottom: var(--tertiary-button-stroke) solid transparent;
   padding-bottom: 0rem !important;
   line-height: inherit;
   background: none !important;
@@ -384,7 +384,7 @@ html {
 /* Site Navigation - When Active or Hovered */
 body:not(.header--menu-open) .header-nav-item--active > a, 
 body:not(.header--menu-open) .header-nav-item > a:hover {
-  border-bottom: 2px solid var(--primary-accent);
+  border-bottom: var(--tertiary-button-stroke) solid var(--primary-accent);
 }
 
 /* Active Menu - No Underline for Folder Titles */
@@ -842,7 +842,7 @@ ul.archive-group-list:not(.sqs-block-archive .archive-block-setting-layout-dropd
 
 /* Menu Block, Active Menu Item */
 .menu-block .menu-selector label.menu-select-labels--active {
- border: 2px solid var(--primary-accent);  
+ border: var(--tertiary-button-stroke) solid var(--primary-accent);  
  text-decoration: none;
  padding: 0.6rem;
  line-height: .5rem;
@@ -850,7 +850,7 @@ ul.archive-group-list:not(.sqs-block-archive .archive-block-setting-layout-dropd
 
 /* Menu Block, Title Underlined */
 .menu-section-title {
-  border-bottom: 2px solid var(--primary-accent);
+  border-bottom: var(--tertiary-button-stroke) solid var(--primary-accent);
   padding-bottom: 0.625rem;
   line-height: 1.25rem;
   display: inline-block;
@@ -858,7 +858,7 @@ ul.archive-group-list:not(.sqs-block-archive .archive-block-setting-layout-dropd
 
 /* Menu Block, Item Title */
 .menu-block .menu-item-title {
- font-weight: var( --paragraph-1-weight) !important;
+ font-weight: var(--paragraph-1-weight) !important;
 }
 
 /* Menu Item Price */
