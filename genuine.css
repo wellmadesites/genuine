@@ -21,6 +21,7 @@
  --icon-font: 'Material Symbols Outlined';
  --padding: 2rem;
  --opacity: 0.5; 
+ --underline: var(--tertiary-button-stroke);
  --transition: all 0.8s ease;
  --grey: hsl(0, 0%, 50%);
  --shadow: rgba(0, 0, 0, 0.1) -0.25rem 0.5625rem 1.5625rem -0.375rem;
@@ -204,7 +205,7 @@ p {
  background: transparent !important;
  opacity: var(--opacity) !important;
  text-decoration: underline;
- text-decoration-thickness: var(--tertiary-button-stroke);
+ text-decoration-thickness: var(--underline);
  text-underline-offset: 7px;
  display: inline-block;
 }
@@ -265,7 +266,7 @@ p {
   position: relative;
   background-color: transparent !important;
   text-decoration: underline;
-  text-decoration-thickness: var(--tertiary-button-stroke);
+  text-decoration-thickness: var(--underline);
   text-underline-offset: 7px;
 }
 
@@ -367,7 +368,7 @@ html {
 
 /* Site Navigation - Default State (prevents jump on hover by reserving space) */
 .header-nav-item > a {
-  border-bottom: var(--tertiary-button-stroke) solid transparent;
+  border-bottom: var(--underline) solid transparent;
   padding-bottom: 0rem !important;
   line-height: inherit;
   background: none !important;
@@ -384,7 +385,7 @@ html {
 /* Site Navigation - When Active or Hovered */
 body:not(.header--menu-open) .header-nav-item--active > a, 
 body:not(.header--menu-open) .header-nav-item > a:hover {
-  border-bottom: var(--tertiary-button-stroke) solid var(--primary-accent);
+  border-bottom: var(--underline) solid var(--primary-accent);
 }
 
 /* Active Menu - No Underline for Folder Titles */
