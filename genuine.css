@@ -58,6 +58,11 @@ span[style*="line-through"]:not(strong) {
  top: -1px;
 }
 
+/* Increase Icon Size when Bold */
+span[style="text-decoration:line-through"] strong {
+  font-size: var(--increase) !important;
+}
+
 /* Custom Icons Added before the Site Title */
 .header-title-text a::before { 
    font-family: var(--icon-font);
@@ -82,7 +87,6 @@ body:not(.header--menu-open) .header-nav-folder-item--active .header-nav-folder-
  margin: 0 !important;
  background-image: none !important;
 }
-
 
 /* Back to Top Icon Styling */
 #back-to-top {
