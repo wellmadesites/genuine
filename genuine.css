@@ -49,7 +49,7 @@
 span[style*="line-through"]:not(strong) {
  font-family: 'Material Symbols Outlined' !important;
  font-size: var(--heading-2)!important;
- color: var(--secondary-accent);
+ color: inherit !important;
  text-decoration: none !important;
  vertical-align: middle;
  display: inline-block;
