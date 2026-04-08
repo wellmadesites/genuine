@@ -1022,7 +1022,6 @@ border-radius: var(--corners) !important;
 /* Promotional Pop-Up Title */
 .sqs-slide-wrapper[data-slide-type="popup-overlay"] .sqs-slide-container[data-slide-type="popup-overlay"] [data-slice-type="heading"]:not([data-content-empty="true"]) h1#sqs-slash-page-header{
  font-family: var(--heading) !important;
- font-size: var(--heading-1) !important;
  letter-spacing: var(--heading-font-letter-spacing) !important;
  font-weight: var(--medium) !important;
  line-height: var(--heading-font-line-height) !important;
