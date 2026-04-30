@@ -909,7 +909,6 @@ div.sqs-block-opentable-v2 .squarespace-opentable-new-age-wrapper h1 {
 .sqs-block-quote, 
 .sqs-block-map.vsize-12 .sqs-block-content, 
 .sqs-video-wrapper .sqs-video-overlay,
-.video-block .sqs-block-content .intrinsic .embed-block-wrapper:not(.embed-block-provider-SoundCloud) iframe,
 .sqs-modal-lightbox-content .lightbox-inner .lightbox-content, 
 div.sqs-block-opentable-v2 .squarespace-opentable-new-age-wrapper, 
 .product-block .image-container img, 
@@ -974,11 +973,12 @@ border-radius: var(--corners) !important;
 .product-gallery-slides-item.going-prev.selected, 
 .product-related-products.related-products .product-list-item .product-list-item-link .product-list-item-image .grid-item-image,
 .header .header-nav .header-nav-item--folder .header-nav-folder-content, 
- .sqs-search-ui-button-wrapper .search-input,
+.sqs-search-ui-button-wrapper .search-input,
 .menu-block .menu-selector label.menu-select-labels--active,
- .sqs-block-archive .archive-block-setting-layout-dropdown.archive-block-wrapper, 
- .sqs-widgets-audio-player, 
- div.sqs-block-opentable-v2 .squarespace-opentable-button-wrapper .ot-dtp-picker-button { 
+.sqs-block-archive .archive-block-setting-layout-dropdown.archive-block-wrapper, 
+.sqs-widgets-audio-player, 
+div.sqs-block-opentable-v2 .squarespace-opentable-button-wrapper .ot-dtp-picker-button,
+.video-block .sqs-block-content .intrinsic .embed-block-wrapper:not(.embed-block-provider-SoundCloud) iframe { 
   border-radius: var(--smallcorners) !important; 
 }
 
