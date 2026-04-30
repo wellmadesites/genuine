@@ -909,6 +909,7 @@ div.sqs-block-opentable-v2 .squarespace-opentable-new-age-wrapper h1 {
 .sqs-block-quote, 
 .sqs-block-map.vsize-12 .sqs-block-content, 
 .sqs-video-wrapper .sqs-video-overlay,
+.video-block .sqs-block-content .intrinsic .embed-block-wrapper:not(.embed-block-provider-SoundCloud) iframe,
 .sqs-modal-lightbox-content .lightbox-inner .lightbox-content, 
 div.sqs-block-opentable-v2 .squarespace-opentable-new-age-wrapper, 
 .product-block .image-container img, 
