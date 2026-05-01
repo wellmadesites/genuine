@@ -76,6 +76,17 @@ span[style="text-decoration:line-through"] strong {
    top: -1px;
 }
 
+/* Custom Icons Added before the Site Title Color on Dark Background */
+[data-section-theme="bright"], 
+[data-section-theme="dark"], 
+[data-section-theme="dark-bold"], 
+[data-section-theme="black"], 
+[data-section-theme="black-bold"] {
+.header-title-text a::before {
+   color: var(--background-color) !important;
+}
+}
+
 /* Navigation Folder Item, Symbol Before */
 body:not(.header--menu-open) .header-nav-folder-item--active .header-nav-folder-item-content::before {
  font-family: 'Material Symbols Outlined' !important; 
