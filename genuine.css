@@ -373,7 +373,7 @@ html {
 /* User Account Text */ 
 .user-accounts-link.loaded .user-accounts-text-link, 
 .header .cart-text-link {
- font-weight: var(--bold) !important;
+ font-weight: var(--site-navigation-font-font-weight) !important;
 }
 
 /* Site Navigation - Default State (prevents jump on hover by reserving space) */
