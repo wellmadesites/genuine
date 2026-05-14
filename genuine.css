@@ -237,7 +237,6 @@ p {
  font-size: var(--paragraph-3) !important;
  text-transform: var(--transform) !important;
  letter-spacing: var(--spacing) !important;
- font-weight: var(--primary-button-font-font-weight) !important;
 }
 
 /* Read More Link, Blog Page Link Underline Position */
